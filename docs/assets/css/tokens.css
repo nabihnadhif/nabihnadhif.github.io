@@ -1,0 +1,65 @@
+:root {
+  color-scheme: dark;
+
+  /* Brand Palette — derived from SIRIUS Digital Solutions emblem */
+  --bg-canvas: #041428;
+  --bg-surface: #081c36;
+  --bg-elevated: #0d2442;
+  --bg-elevated-hover: #122d52;
+  --bg-glass: rgba(4, 20, 40, 0.82);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --accent-soft: rgba(56, 189, 248, 0.12);
+  --accent-glow: rgba(56, 189, 248, 0.28);
+
+  --border: rgba(56, 189, 248, 0.16);
+  --border-strong: rgba(56, 189, 248, 0.38);
+
+  --success: #34d399;
+  --success-soft: rgba(52, 211, 153, 0.14);
+  --warning: #fbbf24;
+  --warning-soft: rgba(251, 191, 36, 0.14);
+  --danger: #fb7185;
+  --danger-soft: rgba(251, 113, 133, 0.14);
+
+  /* Typography */
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: clamp(1.5rem, 2.4vw, 1.875rem);
+  --text-3xl: clamp(1.875rem, 3.2vw, 2.5rem);
+  --text-hero: clamp(2.35rem, 5vw, 3.75rem);
+
+  /* Spacing & Layout */
+  --container-max: 1180px;
+  --gutter: clamp(1rem, 3vw, 2rem);
+  --section-py: clamp(3.5rem, 7vw, 6rem);
+  --header-height: 76px;
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 12px 32px -12px rgba(2, 8, 23, 0.65);
+  --shadow-glow: 0 0 40px -10px rgba(56, 189, 248, 0.25);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 280ms;
+}
+

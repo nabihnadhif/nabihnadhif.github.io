@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio &amp; Case Studies — SIRIUS Digital Solutions</title>
+    <meta
+      name="description"
+      content="Selected digital products, cloud migrations, and automation systems engineered by SIRIUS Digital Solutions."
+    />
+    <link rel="canonical" href="https://www.siriusds.fr/portfolio.html" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
+  </head>
+  <body data-page="portfolio">
+    <a class="skip-link" href="#main-content" data-i18n="skip.content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="38" height="38" />
+          <span class="brand-text">
+            <span class="brand-name">SIRIUS</span>
+            <span class="brand-sub">DIGITAL SOLUTIONS</span>
+          </span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
+            <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang-btn="fr" aria-pressed="false">FR</button>
+          </div>
+          <a class="btn btn-primary btn-sm header-cta" href="contact.html" data-i18n="nav.cta">
+            Start a Project
+          </a>
+          <button
+            type="button"
+            id="nav-toggle"
+            class="nav-toggle"
+            aria-controls="nav-mobile"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
+          <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="nav-mobile-actions">
+          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Start a Project</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow" data-i18n="portfolio.hero.eyebrow">Portfolio &amp; Case Studies</span>
+          <h1 class="gradient-text" data-i18n="portfolio.hero.title">
+            Representative solutions built for clarity and scale.
+          </h1>
+          <p data-i18n="portfolio.hero.lead">
+            Explore template case studies across web platforms, cloud data systems, and AI-assisted workflows. Click any project to inspect the full breakdown.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-bar" role="group" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn" data-filter="all" aria-pressed="true" data-i18n="portfolio.filter.all">
+              All Projects
+            </button>
+            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="portfolio.filter.web">
+              Web &amp; Apps
+            </button>
+            <button type="button" class="filter-btn" data-filter="cloud" aria-pressed="false" data-i18n="portfolio.filter.cloud">
+              Cloud &amp; Data
+            </button>
+            <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false" data-i18n="portfolio.filter.ai">
+              AI &amp; Automation
+            </button>
+          </div>
+
+          <p id="portfolio-count" class="sr-only" aria-live="polite"></p>
+
+          <div id="portfolio-grid" class="grid grid-3">
+            <article class="card project-card" data-project-id="saas-portal" data-category="web">
+              <div class="project-thumb">
+                <span class="project-thumb-label">Web &amp; Apps</span>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="saas-portal" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+
+            <article class="card project-card" data-project-id="cloud-lakehouse" data-category="cloud">
+              <div class="project-thumb">
+                <span class="project-thumb-label">Cloud &amp; Data</span>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">BigQuery</span>
+                <span class="tag">dbt</span>
+                <span class="tag">Terraform</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="cloud-lakehouse" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+
+            <article class="card project-card" data-project-id="ai-ops-copilot" data-category="ai">
+              <div class="project-thumb">
+                <span class="project-thumb-label">AI &amp; Automation</span>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">pgvector</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="ai-ops-copilot" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+
+            <article class="card project-card" data-project-id="booking-platform" data-category="web">
+              <div class="project-thumb">
+                <span class="project-thumb-label">Web &amp; Apps</span>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="booking-platform" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+
+            <article class="card project-card" data-project-id="devops-modernization" data-category="cloud">
+              <div class="project-thumb">
+                <span class="project-thumb-label">Cloud &amp; Data</span>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">Kubernetes</span>
+                <span class="tag">OpenTelemetry</span>
+                <span class="tag">GitHub Actions</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="devops-modernization" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+
+            <article class="card project-card" data-project-id="invoice-extraction" data-category="ai">
+              <div class="project-thumb">
+                <span class="project-thumb-label">AI &amp; Automation</span>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Document AI</span>
+                <span class="tag">BigQuery</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="invoice-extraction" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Study Dialog -->
+      <dialog id="case-dialog" class="case-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-header">
+          <div>
+            <span class="card-meta" data-dialog-sector></span>
+            <h2 id="dialog-title" class="card-title" style="margin-top: 0.25rem" data-dialog-title></h2>
+          </div>
+          <button type="button" class="dialog-close" data-dialog-close aria-label="Close">✕</button>
+        </div>
+
+        <div class="dialog-body">
+          <div class="dialog-section">
+            <h4 data-i18n="portfolio.modal.challenge">The Challenge</h4>
+            <p data-dialog-challenge></p>
+          </div>
+          <div class="dialog-section">
+            <h4 data-i18n="portfolio.modal.solution">The Solution</h4>
+            <p data-dialog-solution></p>
+          </div>
+          <div class="dialog-section">
+            <h4 data-i18n="portfolio.modal.outcomes">Key Outcomes</h4>
+            <ul class="check-list" data-dialog-outcomes></ul>
+          </div>
+          <div class="dialog-section">
+            <h4 data-i18n="portfolio.modal.stack">Technology Stack</h4>
+            <div class="tag-list" data-dialog-stack></div>
+          </div>
+        </div>
+
+        <div class="dialog-footer">
+          <button type="button" class="btn btn-secondary btn-sm" data-dialog-close data-i18n="portfolio.modal.close">
+            Close
+          </button>
+          <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="portfolio.modal.cta">
+            Build something similar
+          </a>
+        </div>
+      </dialog>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a class="brand" href="index.html" style="margin-bottom: 1rem">
+              <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="34" height="34" />
+              <span class="brand-text">
+                <span class="brand-name">SIRIUS</span>
+                <span class="brand-sub">DIGITAL SOLUTIONS</span>
+              </span>
+            </a>
+            <p style="font-size: var(--text-sm); max-width: 34ch" data-i18n="footer.tagline">
+              Engineering reliable web platforms, scalable cloud foundations, and intelligent automation tailored for modern teams.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3 data-i18n="footer.company">Company</h3>
+            <ul class="footer-links">
+              <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+              <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+              <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
+              <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 data-i18n="footer.solutions">Solutions</h3>
+            <ul class="footer-links">
+              <li><a href="services.html" data-i18n="footer.sol.web">Web &amp; Mobile Apps</a></li>
+              <li><a href="services.html" data-i18n="footer.sol.cloud">Cloud &amp; DevOps</a></li>
+              <li><a href="services.html" data-i18n="footer.sol.data">Data Engineering</a></li>
+              <li><a href="services.html" data-i18n="footer.sol.ai">AI &amp; Automation</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 data-i18n="footer.connect">Connect</h3>
+            <ul class="footer-links">
+              <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+              <li><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></li>
+              <li><span style="font-size: var(--text-sm); color: var(--text-secondary)" data-i18n="footer.location">France · Remote Worldwide</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span data-year>2026</span> SIRIUS Digital Solutions.
+            <span data-i18n="footer.rights">All rights reserved.</span>
+          </p>
+          <div class="footer-legal">
+            <a href="legal.html" data-i18n="footer.legal">Legal Notice &amp; Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+  </body>
+</html>
+
