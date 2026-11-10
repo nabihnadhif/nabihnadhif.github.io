@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#041428" />
     <title>Portfolio &amp; Case Studies — SIRIUS Digital Solutions</title>
     <meta
       name="description"
       content="Selected digital products, cloud migrations, and automation systems engineered by SIRIUS Digital Solutions."
     />
     <link rel="canonical" href="https://www.siriusds.fr/portfolio.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/tokens.css" />
@@ -23,61 +25,64 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="38" height="38" />
+          <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" fill="none" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+            <path d="M25 11H15a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H39" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" />
+            <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+            <path d="M11 33c3.5-4.5 10.5-3.2 12 2.2 1.2 4.2-2.5 8-6.4 6.7-2.6-.9-3.2-4-.8-5.4 1.6-.9 3.6.2 3.3 1.9" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+            <path d="M23 41c12.5 1.5 23-6 29-21" stroke="#7dd3fc" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M17 48c14.5 2 26.5-4.5 34.5-18.5" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round" />
+          </svg>
           <span class="brand-text">
             <span class="brand-name">SIRIUS</span>
             <span class="brand-sub">DIGITAL SOLUTIONS</span>
           </span>
         </a>
 
-        <nav class="nav-desktop" aria-label="Primary navigation">
-          <ul class="nav-list">
+        <nav class="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.ariaPrimary">
+          <button
+            type="button"
+            id="nav-toggle"
+            class="menu-button"
+            popovertarget="site-menu"
+            popovertargetaction="toggle"
+            aria-controls="site-menu"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+            data-i18n-attr="aria-label:nav.menuOpen"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+            <span data-i18n="nav.menuLabel">Menu</span>
+          </button>
+
+          <ul id="site-menu" class="site-menu">
             <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
             <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
             <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li class="site-menu-cta">
+              <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="nav.cta">Start a Project</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
+          <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-attr="aria-label:nav.ariaLang">
             <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
             <button type="button" class="lang-btn" data-lang-btn="fr" aria-pressed="false">FR</button>
           </div>
           <a class="btn btn-primary btn-sm header-cta" href="contact.html" data-i18n="nav.cta">
             Start a Project
           </a>
-          <button
-            type="button"
-            id="nav-toggle"
-            class="nav-toggle"
-            aria-controls="nav-mobile"
-            aria-expanded="false"
-            aria-label="Open navigation menu"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
-            </svg>
-          </button>
         </div>
       </div>
-
-      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="nav-mobile-actions">
-          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Start a Project</a>
-        </div>
-      </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section class="page-hero">
         <div class="container">
           <span class="eyebrow" data-i18n="portfolio.hero.eyebrow">Portfolio &amp; Case Studies</span>
@@ -85,140 +90,209 @@
             Representative solutions built for clarity and scale.
           </h1>
           <p data-i18n="portfolio.hero.lead">
-            Explore template case studies across web platforms, cloud data systems, and AI-assisted workflows. Click any project to inspect the full breakdown.
+            Explore selected case studies across web &amp; CMS/ECM engineering, CI/CD automation, and applied AI enablement. Select any project to inspect the full architecture and outcomes.
           </p>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="filter-bar" role="group" aria-label="Filter projects by category">
-            <button type="button" class="filter-btn" data-filter="all" aria-pressed="true" data-i18n="portfolio.filter.all">
-              All Projects
-            </button>
-            <button type="button" class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="portfolio.filter.web">
-              Web &amp; Apps
-            </button>
-            <button type="button" class="filter-btn" data-filter="cloud" aria-pressed="false" data-i18n="portfolio.filter.cloud">
-              Cloud &amp; Data
-            </button>
-            <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false" data-i18n="portfolio.filter.ai">
-              AI &amp; Automation
-            </button>
+          <div class="filter-toolbar">
+            <div class="filter-bar" role="group" aria-label="Filter projects by category" data-i18n-attr="aria-label:portfolio.filter.aria">
+              <button type="button" class="filter-btn" data-filter="all" aria-pressed="true" data-i18n="portfolio.filter.all">
+                All Projects
+              </button>
+              <button type="button" class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="portfolio.filter.web">
+                Web &amp; CMS/ECM
+              </button>
+              <button type="button" class="filter-btn" data-filter="cicd" aria-pressed="false" data-i18n="portfolio.filter.cicd">
+                CI/CD &amp; DevOps
+              </button>
+              <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false" data-i18n="portfolio.filter.ai">
+                AI &amp; Training
+              </button>
+            </div>
+            <p id="portfolio-count" class="portfolio-count" aria-live="polite"></p>
           </div>
 
-          <p id="portfolio-count" class="sr-only" aria-live="polite"></p>
-
           <div id="portfolio-grid" class="grid grid-3">
-            <article class="card project-card" data-project-id="saas-portal" data-category="web">
+            <article class="card project-card" data-project-id="ibexa-portal" data-category="web">
               <div class="project-thumb">
-                <span class="project-thumb-label">Web &amp; Apps</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="8" y="8" width="264" height="64" rx="8" stroke="currentColor" stroke-opacity="0.45" />
+                  <path d="M8 24h264" stroke="currentColor" stroke-opacity="0.3" />
+                  <circle cx="20" cy="16" r="2.5" fill="currentColor" />
+                  <circle cx="30" cy="16" r="2.5" fill="currentColor" opacity="0.6" />
+                  <rect x="20" y="34" width="76" height="28" rx="4" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-opacity="0.5" />
+                  <rect x="106" y="34" width="76" height="28" rx="4" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-opacity="0.35" />
+                  <rect x="192" y="34" width="68" height="28" rx="4" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-opacity="0.6" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="portfolio.filter.web">Web &amp; CMS/ECM</span>
+                  <span class="project-metric" data-project-metric></span>
+                </div>
               </div>
               <span class="card-meta" data-project-sector></span>
               <h2 class="card-title" data-project-title></h2>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">TypeScript</span>
-                <span class="tag">Next.js</span>
-                <span class="tag">PostgreSQL</span>
+                <span class="tag">PHP / Symfony</span>
+                <span class="tag">Ibexa DXP</span>
+                <span class="tag">React</span>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="saas-portal" data-i18n="portfolio.btn.inspect">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="ibexa-portal" data-i18n="portfolio.btn.inspect">
                   View Case Study
                 </button>
               </div>
             </article>
 
-            <article class="card project-card" data-project-id="cloud-lakehouse" data-category="cloud">
+            <article class="card project-card" data-project-id="nuxeo-integration" data-category="web">
               <div class="project-thumb">
-                <span class="project-thumb-label">Cloud &amp; Data</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="14" y="14" width="54" height="20" rx="5" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.5" />
+                  <rect x="14" y="46" width="54" height="20" rx="5" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.5" />
+                  <path d="M68 24h34l14 16M68 56h34l14-16" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.8" />
+                  <rect x="116" y="24" width="62" height="32" rx="6" fill="currentColor" fill-opacity="0.22" stroke="currentColor" />
+                  <path d="M178 40h34" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.8" />
+                  <rect x="212" y="18" width="54" height="44" rx="6" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-opacity="0.6" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="portfolio.filter.web">Web &amp; CMS/ECM</span>
+                  <span class="project-metric" data-project-metric></span>
+                </div>
               </div>
               <span class="card-meta" data-project-sector></span>
               <h2 class="card-title" data-project-title></h2>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">BigQuery</span>
-                <span class="tag">dbt</span>
-                <span class="tag">Terraform</span>
+                <span class="tag">Java / Spring Boot</span>
+                <span class="tag">Nuxeo ECM</span>
+                <span class="tag">Angular</span>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="cloud-lakehouse" data-i18n="portfolio.btn.inspect">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="nuxeo-integration" data-i18n="portfolio.btn.inspect">
                   View Case Study
                 </button>
               </div>
             </article>
 
-            <article class="card project-card" data-project-id="ai-ops-copilot" data-category="ai">
+            <article class="card project-card" data-project-id="typo3-modernization" data-category="web">
               <div class="project-thumb">
-                <span class="project-thumb-label">AI &amp; Automation</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="24" y="10" width="110" height="60" rx="7" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.5" />
+                  <path d="M40 30h78M40 42h42M40 54h60" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round" />
+                  <path d="M134 40h28" stroke="currentColor" stroke-width="1.8" />
+                  <rect x="162" y="14" width="94" height="52" rx="7" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.65" />
+                  <circle cx="209" cy="40" r="14" stroke="currentColor" stroke-width="2" />
+                  <path d="M209 32v9l6 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="portfolio.filter.web">Web &amp; CMS/ECM</span>
+                  <span class="project-metric" data-project-metric></span>
+                </div>
               </div>
               <span class="card-meta" data-project-sector></span>
               <h2 class="card-title" data-project-title></h2>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">Python</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">pgvector</span>
+                <span class="tag">TYPO3</span>
+                <span class="tag">Symfony</span>
+                <span class="tag">React</span>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="ai-ops-copilot" data-i18n="portfolio.btn.inspect">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="typo3-modernization" data-i18n="portfolio.btn.inspect">
                   View Case Study
                 </button>
               </div>
             </article>
 
-            <article class="card project-card" data-project-id="booking-platform" data-category="web">
+            <article class="card project-card" data-project-id="cicd-platform" data-category="cicd">
               <div class="project-thumb">
-                <span class="project-thumb-label">Web &amp; Apps</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <circle cx="48" cy="40" r="20" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.6" />
+                  <circle cx="140" cy="40" r="22" fill="currentColor" fill-opacity="0.22" stroke="currentColor" />
+                  <circle cx="232" cy="40" r="20" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.6" />
+                  <path d="M68 40h50M162 40h50" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M132 40l6 6 12-12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="portfolio.filter.cicd">CI/CD &amp; DevOps</span>
+                  <span class="project-metric" data-project-metric></span>
+                </div>
               </div>
               <span class="card-meta" data-project-sector></span>
               <h2 class="card-title" data-project-title></h2>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">TypeScript</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">PostgreSQL</span>
-              </div>
-              <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="booking-platform" data-i18n="portfolio.btn.inspect">
-                  View Case Study
-                </button>
-              </div>
-            </article>
-
-            <article class="card project-card" data-project-id="devops-modernization" data-category="cloud">
-              <div class="project-thumb">
-                <span class="project-thumb-label">Cloud &amp; Data</span>
-              </div>
-              <span class="card-meta" data-project-sector></span>
-              <h2 class="card-title" data-project-title></h2>
-              <p data-project-summary></p>
-              <div class="tag-list">
-                <span class="tag">Kubernetes</span>
-                <span class="tag">OpenTelemetry</span>
+                <span class="tag">GitLab CI</span>
                 <span class="tag">GitHub Actions</span>
+                <span class="tag">Azure DevOps</span>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="devops-modernization" data-i18n="portfolio.btn.inspect">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="cicd-platform" data-i18n="portfolio.btn.inspect">
                   View Case Study
                 </button>
               </div>
             </article>
 
-            <article class="card project-card" data-project-id="invoice-extraction" data-category="ai">
+            <article class="card project-card" data-project-id="ai-second-brain" data-category="ai">
               <div class="project-thumb">
-                <span class="project-thumb-label">AI &amp; Automation</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="16" y="16" width="52" height="48" rx="6" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.5" />
+                  <path d="M26 30h32M26 40h24M26 50h28" stroke="currentColor" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
+                  <path d="M68 40h36" stroke="currentColor" stroke-width="1.8" stroke-dasharray="4 3" />
+                  <circle cx="136" cy="40" r="22" fill="currentColor" fill-opacity="0.2" stroke="currentColor" />
+                  <path d="M136 27l2.5 9.5L148 39l-9.5 2.5L136 51l-2.5-9.5L124 39l9.5-2.5L136 27z" fill="currentColor" />
+                  <path d="M158 40h36" stroke="currentColor" stroke-width="1.8" />
+                  <rect x="194" y="20" width="70" height="40" rx="6" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.6" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="portfolio.filter.ai">AI &amp; Training</span>
+                  <span class="project-metric" data-project-metric></span>
+                </div>
               </div>
               <span class="card-meta" data-project-sector></span>
               <h2 class="card-title" data-project-title></h2>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">Python</span>
-                <span class="tag">Document AI</span>
-                <span class="tag">BigQuery</span>
+                <span class="tag">Second Brain</span>
+                <span class="tag">AI Skills</span>
+                <span class="tag">MCP</span>
               </div>
               <div class="card-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-open-project="invoice-extraction" data-i18n="portfolio.btn.inspect">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="ai-second-brain" data-i18n="portfolio.btn.inspect">
+                  View Case Study
+                </button>
+              </div>
+            </article>
+
+            <article class="card project-card" data-project-id="ai-team-training" data-category="ai">
+              <div class="project-thumb">
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="20" y="14" width="60" height="52" rx="6" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.5" />
+                  <rect x="30" y="24" width="40" height="10" rx="2" stroke="currentColor" stroke-dasharray="3 2" />
+                  <path d="M30 44h36M30 53h24" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round" />
+                  <path d="M80 40h34" stroke="currentColor" stroke-width="1.8" />
+                  <rect x="114" y="20" width="66" height="40" rx="6" fill="currentColor" fill-opacity="0.2" stroke="currentColor" />
+                  <path d="M180 40h30" stroke="currentColor" stroke-width="1.8" />
+                  <rect x="210" y="16" width="52" height="48" rx="6" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-opacity="0.6" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="portfolio.filter.ai">AI &amp; Training</span>
+                  <span class="project-metric" data-project-metric></span>
+                </div>
+              </div>
+              <span class="card-meta" data-project-sector></span>
+              <h2 class="card-title" data-project-title></h2>
+              <p data-project-summary></p>
+              <div class="tag-list">
+                <span class="tag">AI Training</span>
+                <span class="tag">Workshops</span>
+                <span class="tag">Agent Skills</span>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-open-project="ai-team-training" data-i18n="portfolio.btn.inspect">
                   View Case Study
                 </button>
               </div>
@@ -228,30 +302,40 @@
       </section>
 
       <!-- Case Study Dialog -->
-      <dialog id="case-dialog" class="case-dialog" aria-labelledby="dialog-title">
+      <dialog id="case-dialog" class="case-dialog" closedby="any" aria-labelledby="dialog-title">
         <div class="dialog-header">
           <div>
             <span class="card-meta" data-dialog-sector></span>
             <h2 id="dialog-title" class="card-title" style="margin-top: 0.25rem" data-dialog-title></h2>
           </div>
-          <button type="button" class="dialog-close" data-dialog-close aria-label="Close">✕</button>
+          <button
+            type="button"
+            class="dialog-close"
+            data-dialog-close
+            aria-label="Close"
+            data-i18n-attr="aria-label:portfolio.modal.close"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" stroke-linecap="round" />
+            </svg>
+          </button>
         </div>
 
         <div class="dialog-body">
           <div class="dialog-section">
-            <h4 data-i18n="portfolio.modal.challenge">The Challenge</h4>
+            <h3 data-i18n="portfolio.modal.challenge">The Challenge</h3>
             <p data-dialog-challenge></p>
           </div>
           <div class="dialog-section">
-            <h4 data-i18n="portfolio.modal.solution">The Solution</h4>
+            <h3 data-i18n="portfolio.modal.solution">The Solution</h3>
             <p data-dialog-solution></p>
           </div>
           <div class="dialog-section">
-            <h4 data-i18n="portfolio.modal.outcomes">Key Outcomes</h4>
+            <h3 data-i18n="portfolio.modal.outcomes">Key Outcomes</h3>
             <ul class="check-list" data-dialog-outcomes></ul>
           </div>
           <div class="dialog-section">
-            <h4 data-i18n="portfolio.modal.stack">Technology Stack</h4>
+            <h3 data-i18n="portfolio.modal.stack">Technology Stack</h3>
             <div class="tag-list" data-dialog-stack></div>
           </div>
         </div>
@@ -260,7 +344,7 @@
           <button type="button" class="btn btn-secondary btn-sm" data-dialog-close data-i18n="portfolio.modal.close">
             Close
           </button>
-          <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="portfolio.modal.cta">
+          <a class="btn btn-primary btn-sm" href="contact.html" data-dialog-cta data-i18n="portfolio.modal.cta">
             Build something similar
           </a>
         </div>
@@ -272,7 +356,11 @@
         <div class="footer-grid">
           <div class="footer-col">
             <a class="brand" href="index.html" style="margin-bottom: 1rem">
-              <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="34" height="34" />
+              <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" fill="none" aria-hidden="true">
+                <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+                <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+                <path d="M16 44c12.5 2 24.5-4.5 34-19" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+              </svg>
               <span class="brand-text">
                 <span class="brand-name">SIRIUS</span>
                 <span class="brand-sub">DIGITAL SOLUTIONS</span>
@@ -284,27 +372,28 @@
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.company">Company</h3>
+            <h2 class="footer-heading" data-i18n="footer.company">Company</h2>
             <ul class="footer-links">
               <li><a href="index.html" data-i18n="nav.home">Home</a></li>
               <li><a href="services.html" data-i18n="nav.services">Services</a></li>
               <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
               <li><a href="about.html" data-i18n="nav.about">About</a></li>
+              <li><a href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.solutions">Solutions</h3>
+            <h2 class="footer-heading" data-i18n="footer.solutions">Solutions</h2>
             <ul class="footer-links">
-              <li><a href="services.html" data-i18n="footer.sol.web">Web &amp; Mobile Apps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.cloud">Cloud &amp; DevOps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.data">Data Engineering</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.ai">AI &amp; Automation</a></li>
+              <li><a href="services.html#web-platforms" data-i18n="footer.sol.web">Web &amp; Backend Apps</a></li>
+              <li><a href="services.html#cms-integrations" data-i18n="footer.sol.cms">TYPO3, Ibexa &amp; Nuxeo</a></li>
+              <li><a href="services.html#cicd-devops" data-i18n="footer.sol.cicd">CI/CD (GitLab, GitHub, Azure)</a></li>
+              <li><a href="services.html#ai-training" data-i18n="footer.sol.ai">AI, Second Brain &amp; Training</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.connect">Connect</h3>
+            <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
             <ul class="footer-links">
               <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
               <li><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></li>
@@ -330,4 +419,3 @@
     <script src="assets/js/portfolio.js"></script>
   </body>
 </html>
-

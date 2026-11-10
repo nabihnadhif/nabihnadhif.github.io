@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="sirius-arc" x1="12" y1="52" x2="54" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="55%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <linearGradient id="sirius-frame" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#041428" />
+  <path
+    d="M25 11H15a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H39"
+    stroke="url(#sirius-frame)"
+    stroke-width="3.2"
+    stroke-linecap="round"
+  />
+  <path
+    d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z"
+    fill="#ffffff"
+  />
+  <path
+    d="M11 33c3.5-4.5 10.5-3.2 12 2.2 1.2 4.2-2.5 8-6.4 6.7-2.6-.9-3.2-4-.8-5.4 1.6-.9 3.6.2 3.3 1.9"
+    stroke="url(#sirius-arc)"
+    stroke-width="3.2"
+    stroke-linecap="round"
+  />
+  <path
+    d="M23 41c12.5 1.5 23-6 29-21"
+    stroke="url(#sirius-arc)"
+    stroke-width="3.5"
+    stroke-linecap="round"
+  />
+  <path
+    d="M17 48c14.5 2 26.5-4.5 34.5-18.5"
+    stroke="#38bdf8"
+    stroke-width="3.2"
+    stroke-linecap="round"
+    opacity="0.85"
+  />
+  <circle cx="17" cy="17" r="1.6" fill="#e0f2fe" />
+  <circle cx="47" cy="17" r="1.6" fill="#e0f2fe" />
+  <circle cx="46" cy="46" r="1.5" fill="#7dd3fc" />
+</svg>
+

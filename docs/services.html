@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#041428" />
     <title>Services &amp; Solutions — SIRIUS Digital Solutions</title>
     <meta
       name="description"
       content="Explore custom software engineering, cloud infrastructure, data pipelines, and AI automation services."
     />
     <link rel="canonical" href="https://www.siriusds.fr/services.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/tokens.css" />
@@ -23,61 +25,64 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="38" height="38" />
+          <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" fill="none" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+            <path d="M25 11H15a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H39" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" />
+            <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+            <path d="M11 33c3.5-4.5 10.5-3.2 12 2.2 1.2 4.2-2.5 8-6.4 6.7-2.6-.9-3.2-4-.8-5.4 1.6-.9 3.6.2 3.3 1.9" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+            <path d="M23 41c12.5 1.5 23-6 29-21" stroke="#7dd3fc" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M17 48c14.5 2 26.5-4.5 34.5-18.5" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round" />
+          </svg>
           <span class="brand-text">
             <span class="brand-name">SIRIUS</span>
             <span class="brand-sub">DIGITAL SOLUTIONS</span>
           </span>
         </a>
 
-        <nav class="nav-desktop" aria-label="Primary navigation">
-          <ul class="nav-list">
+        <nav class="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.ariaPrimary">
+          <button
+            type="button"
+            id="nav-toggle"
+            class="menu-button"
+            popovertarget="site-menu"
+            popovertargetaction="toggle"
+            aria-controls="site-menu"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+            data-i18n-attr="aria-label:nav.menuOpen"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+            <span data-i18n="nav.menuLabel">Menu</span>
+          </button>
+
+          <ul id="site-menu" class="site-menu">
             <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
             <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
             <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li class="site-menu-cta">
+              <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="nav.cta">Start a Project</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
+          <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-attr="aria-label:nav.ariaLang">
             <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
             <button type="button" class="lang-btn" data-lang-btn="fr" aria-pressed="false">FR</button>
           </div>
           <a class="btn btn-primary btn-sm header-cta" href="contact.html" data-i18n="nav.cta">
             Start a Project
           </a>
-          <button
-            type="button"
-            id="nav-toggle"
-            class="nav-toggle"
-            aria-controls="nav-mobile"
-            aria-expanded="false"
-            aria-label="Open navigation menu"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
-            </svg>
-          </button>
         </div>
       </div>
-
-      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="nav-mobile-actions">
-          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Start a Project</a>
-        </div>
-      </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section class="page-hero">
         <div class="container">
           <span class="eyebrow" data-i18n="services.hero.eyebrow">Services &amp; Solutions</span>
@@ -94,79 +99,114 @@
       <section class="section">
         <div class="container">
           <div class="grid grid-2">
-            <article class="card">
-              <span class="card-meta" data-i18n="services.offer.1.meta">01 · Applications</span>
-              <h2 class="card-title" data-i18n="services.offer.1.title">Custom Web &amp; Mobile Platforms</h2>
+            <article id="web-platforms" class="card">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem">
+                <span class="card-meta" data-i18n="services.offer.1.meta">01 · Applications</span>
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="14" rx="2" />
+                    <path d="M8 20h8M12 18v2" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="card-title" data-i18n="services.offer.1.title">Full-Stack Web &amp; Backend Engineering</h2>
               <p data-i18n="services.offer.1.desc">
-                Responsive SaaS interfaces, B2B client portals, and high-reliability backend APIs engineered for speed and accessibility.
+                Maintainable enterprise web applications, B2B portals, and responsive interfaces engineered with proven frameworks.
               </p>
               <ul class="check-list">
-                <li data-i18n="services.offer.1.b1">Architecture &amp; responsive UI implementation</li>
-                <li data-i18n="services.offer.1.b2">REST / GraphQL API design &amp; authentication</li>
-                <li data-i18n="services.offer.1.b3">Core Web Vitals &amp; WCAG accessibility tuning</li>
+                <li data-i18n="services.offer.1.b1">Backend APIs &amp; domain logic in PHP (Symfony) and Java (Spring Boot)</li>
+                <li data-i18n="services.offer.1.b2">Rich client interfaces with Angular, React, and TypeScript</li>
+                <li data-i18n="services.offer.1.b3">Automated testing, refactoring &amp; WCAG accessibility tuning</li>
               </ul>
               <div class="tag-list card-footer">
-                <span class="tag">TypeScript</span>
-                <span class="tag">React / Next.js</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">PostgreSQL</span>
+                <span class="tag">PHP / Symfony</span>
+                <span class="tag">Java / Spring Boot</span>
+                <span class="tag">Angular</span>
+                <span class="tag">React</span>
               </div>
             </article>
 
-            <article class="card">
-              <span class="card-meta" data-i18n="services.offer.2.meta">02 · Infrastructure</span>
-              <h2 class="card-title" data-i18n="services.offer.2.title">Cloud Architecture &amp; DevOps</h2>
+            <article id="cms-integrations" class="card">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem">
+                <span class="card-meta" data-i18n="services.offer.2.meta">02 · Content &amp; Editors</span>
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="8" height="7" rx="1.5" />
+                    <rect x="13" y="4" width="8" height="7" rx="1.5" />
+                    <rect x="3" y="13" width="18" height="7" rx="1.5" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="card-title" data-i18n="services.offer.2.title">CMS, DXP &amp; Editor Integrations</h2>
               <p data-i18n="services.offer.2.desc">
-                Reproducible cloud environments with automated testing, container orchestration, and transparent FinOps cost controls.
+                Seamless integration and modernization of enterprise content platforms, digital asset repositories, and editorial workflows.
               </p>
               <ul class="check-list">
-                <li data-i18n="services.offer.2.b1">Terraform / IaC &amp; multi-environment setups</li>
-                <li data-i18n="services.offer.2.b2">GitHub Actions CI/CD &amp; release automation</li>
-                <li data-i18n="services.offer.2.b3">Monitoring, alerting &amp; security hardening</li>
+                <li data-i18n="services.offer.2.b1">Custom platforms &amp; migrations on TYPO3 and Ibexa DXP</li>
+                <li data-i18n="services.offer.2.b2">Nuxeo ECM/DAM connectors, metadata workflows &amp; SSO</li>
+                <li data-i18n="services.offer.2.b3">Headless APIs linking editors to Angular &amp; React front-ends</li>
               </ul>
               <div class="tag-list card-footer">
-                <span class="tag">Google Cloud</span>
-                <span class="tag">AWS</span>
-                <span class="tag">Terraform</span>
+                <span class="tag">TYPO3</span>
+                <span class="tag">Ibexa DXP</span>
+                <span class="tag">Nuxeo ECM</span>
+                <span class="tag">REST / GraphQL</span>
+              </div>
+            </article>
+
+            <article id="cicd-devops" class="card">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem">
+                <span class="card-meta" data-i18n="services.offer.3.meta">03 · Delivery</span>
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="6" cy="12" r="3" />
+                    <circle cx="18" cy="7" r="3" />
+                    <circle cx="18" cy="17" r="3" />
+                    <path d="M8.7 10.7 15.3 8.3M8.7 13.3l6.6 2.4" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="card-title" data-i18n="services.offer.3.title">CI/CD &amp; Release Automation</h2>
+              <p data-i18n="services.offer.3.desc">
+                Predictable, automated build, test, and deployment pipelines across your preferred Git and cloud ecosystems.
+              </p>
+              <ul class="check-list">
+                <li data-i18n="services.offer.3.b1">Pipeline architecture on GitLab CI, GitHub Actions &amp; Azure DevOps</li>
+                <li data-i18n="services.offer.3.b2">Automated quality gates, linting, security scans &amp; staging previews</li>
+                <li data-i18n="services.offer.3.b3">Containerized builds (Docker) &amp; zero-downtime release workflows</li>
+              </ul>
+              <div class="tag-list card-footer">
+                <span class="tag">GitLab CI</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Azure DevOps</span>
                 <span class="tag">Docker</span>
               </div>
             </article>
 
-            <article class="card">
-              <span class="card-meta" data-i18n="services.offer.3.meta">03 · Data</span>
-              <h2 class="card-title" data-i18n="services.offer.3.title">Data Pipelines &amp; Analytics</h2>
-              <p data-i18n="services.offer.3.desc">
-                Clean ingestion and transformation workflows turning fragmented operational data into trusted decision-making assets.
-              </p>
-              <ul class="check-list">
-                <li data-i18n="services.offer.3.b1">Modern ELT pipelines (BigQuery, dbt, Spark)</li>
-                <li data-i18n="services.offer.3.b2">Data quality checks &amp; schema governance</li>
-                <li data-i18n="services.offer.3.b3">Executive KPI dashboards &amp; self-serve views</li>
-              </ul>
-              <div class="tag-list card-footer">
-                <span class="tag">BigQuery</span>
-                <span class="tag">dbt</span>
-                <span class="tag">Python</span>
-                <span class="tag">Airflow</span>
+            <article id="ai-training" class="card">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem">
+                <span class="card-meta" data-i18n="services.offer.4.meta">04 · Intelligence &amp; Enablement</span>
+                <div class="card-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" stroke-linecap="round" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
               </div>
-            </article>
-
-            <article class="card">
-              <span class="card-meta" data-i18n="services.offer.4.meta">04 · Intelligence</span>
-              <h2 class="card-title" data-i18n="services.offer.4.title">AI Integration &amp; Automation</h2>
+              <h2 class="card-title" data-i18n="services.offer.4.title">Applied AI, Second Brain &amp; Training</h2>
               <p data-i18n="services.offer.4.desc">
-                Pragmatic AI assistants, document processing, and workflow automation integrated safely into existing business tools.
+                Pragmatic AI tooling and structured knowledge workflows designed to multiply engineering and team productivity.
               </p>
               <ul class="check-list">
-                <li data-i18n="services.offer.4.b1">RAG knowledge search &amp; internal copilots</li>
-                <li data-i18n="services.offer.4.b2">Automated triage, summarization &amp; extraction</li>
-                <li data-i18n="services.offer.4.b3">Evaluation harnesses &amp; human-in-the-loop guardrails</li>
+                <li data-i18n="services.offer.4.b1">Personal &amp; organizational Second Brain knowledge architectures</li>
+                <li data-i18n="services.offer.4.b2">Custom AI agent skills, MCP tooling &amp; coding-assistant workflows</li>
+                <li data-i18n="services.offer.4.b3">Hands-on AI training, workshops &amp; adoption coaching for teams</li>
               </ul>
               <div class="tag-list card-footer">
-                <span class="tag">Gemini / LLMs</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">pgvector</span>
-                <span class="tag">Cloud Run</span>
+                <span class="tag">Second Brain</span>
+                <span class="tag">Agent Skills</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Team Training</span>
               </div>
             </article>
           </div>
@@ -183,21 +223,24 @@
 
           <div class="grid grid-3">
             <article class="card">
+              <span class="card-meta" data-i18n="services.models.1.meta">2–6 Weeks · Fixed Scope</span>
               <h3 class="card-title" data-i18n="services.models.1.title">Fixed-Scope MVP</h3>
               <p data-i18n="services.models.1.desc">
                 Ideal for validating a new product or internal tool with a defined scope, timeline, and budget.
               </p>
             </article>
             <article class="card">
+              <span class="card-meta" data-i18n="services.models.2.meta">Ongoing · Sprint Integration</span>
               <h3 class="card-title" data-i18n="services.models.2.title">Embedded Engineering</h3>
               <p data-i18n="services.models.2.desc">
                 Senior engineering capacity integrated directly into your sprints, repos, and Slack/Teams channels.
               </p>
             </article>
             <article class="card">
+              <span class="card-meta" data-i18n="services.models.3.meta">1–2 Weeks · Actionable Roadmap</span>
               <h3 class="card-title" data-i18n="services.models.3.title">Architecture &amp; Code Audit</h3>
               <p data-i18n="services.models.3.desc">
-                Focused 1–2 week review of performance, security, cloud spend, and refactoring roadmap.
+                Focused review of performance, security, cloud spend, and prioritized refactoring steps.
               </p>
             </article>
           </div>
@@ -205,11 +248,11 @@
       </section>
 
       <!-- FAQ -->
-      <section class="section">
+      <section class="section" aria-labelledby="faq-heading">
         <div class="container">
           <div class="section-header">
             <span class="eyebrow" data-i18n="services.faq.eyebrow">FAQ</span>
-            <h2 class="section-title" data-i18n="services.faq.title">Common questions</h2>
+            <h2 id="faq-heading" class="section-title" data-i18n="services.faq.title">Common questions</h2>
           </div>
 
           <div class="faq-list">
@@ -235,6 +278,18 @@
               <summary data-i18n="services.faq.4.q">Do you support existing codebases?</summary>
               <div class="faq-body" data-i18n="services.faq.4.a">
                 Yes. We frequently step into legacy or fast-grown codebases to add test coverage, resolve bottlenecks, and modernize deployments.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq.5.q">Can you work inside our GitLab, GitHub, or Azure DevOps environment?</summary>
+              <div class="faq-body" data-i18n="services.faq.5.a">
+                Yes. We integrate directly into your GitLab, GitHub, or Azure DevOps repositories, runners, and security policies without disrupting existing teams.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="services.faq.6.q">What does your AI training &amp; Second Brain offering cover?</summary>
+              <div class="faq-body" data-i18n="services.faq.6.a">
+                We design practical Second Brain knowledge bases, build reusable AI agent skills tailored to your codebase, and run hands-on workshops so teams adopt AI safely and effectively.
               </div>
             </details>
           </div>
@@ -265,7 +320,11 @@
         <div class="footer-grid">
           <div class="footer-col">
             <a class="brand" href="index.html" style="margin-bottom: 1rem">
-              <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="34" height="34" />
+              <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" fill="none" aria-hidden="true">
+                <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+                <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+                <path d="M16 44c12.5 2 24.5-4.5 34-19" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+              </svg>
               <span class="brand-text">
                 <span class="brand-name">SIRIUS</span>
                 <span class="brand-sub">DIGITAL SOLUTIONS</span>
@@ -277,27 +336,28 @@
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.company">Company</h3>
+            <h2 class="footer-heading" data-i18n="footer.company">Company</h2>
             <ul class="footer-links">
               <li><a href="index.html" data-i18n="nav.home">Home</a></li>
               <li><a href="services.html" data-i18n="nav.services">Services</a></li>
               <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
               <li><a href="about.html" data-i18n="nav.about">About</a></li>
+              <li><a href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.solutions">Solutions</h3>
+            <h2 class="footer-heading" data-i18n="footer.solutions">Solutions</h2>
             <ul class="footer-links">
-              <li><a href="services.html" data-i18n="footer.sol.web">Web &amp; Mobile Apps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.cloud">Cloud &amp; DevOps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.data">Data Engineering</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.ai">AI &amp; Automation</a></li>
+              <li><a href="services.html#web-platforms" data-i18n="footer.sol.web">Web &amp; Backend Apps</a></li>
+              <li><a href="services.html#cms-integrations" data-i18n="footer.sol.cms">TYPO3, Ibexa &amp; Nuxeo</a></li>
+              <li><a href="services.html#cicd-devops" data-i18n="footer.sol.cicd">CI/CD (GitLab, GitHub, Azure)</a></li>
+              <li><a href="services.html#ai-training" data-i18n="footer.sol.ai">AI, Second Brain &amp; Training</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.connect">Connect</h3>
+            <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
             <ul class="footer-links">
               <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
               <li><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></li>
@@ -322,4 +382,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-

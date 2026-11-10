@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact — SIRIUS Digital Solutions</title>
+    <meta name="theme-color" content="#041428" />
+    <title>Contact &amp; Quotes — SIRIUS Digital Solutions</title>
     <meta
       name="description"
-      content="Start a conversation with SIRIUS Digital Solutions about your web, cloud, data, or AI project."
+      content="Request a project quote, technical audit, or AI team training with SIRIUS Digital Solutions."
     />
     <link rel="canonical" href="https://www.siriusds.fr/contact.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/tokens.css" />
@@ -23,67 +25,70 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="38" height="38" />
+          <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" fill="none" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+            <path d="M25 11H15a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H39" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" />
+            <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+            <path d="M11 33c3.5-4.5 10.5-3.2 12 2.2 1.2 4.2-2.5 8-6.4 6.7-2.6-.9-3.2-4-.8-5.4 1.6-.9 3.6.2 3.3 1.9" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+            <path d="M23 41c12.5 1.5 23-6 29-21" stroke="#7dd3fc" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M17 48c14.5 2 26.5-4.5 34.5-18.5" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round" />
+          </svg>
           <span class="brand-text">
             <span class="brand-name">SIRIUS</span>
             <span class="brand-sub">DIGITAL SOLUTIONS</span>
           </span>
         </a>
 
-        <nav class="nav-desktop" aria-label="Primary navigation">
-          <ul class="nav-list">
+        <nav class="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.ariaPrimary">
+          <button
+            type="button"
+            id="nav-toggle"
+            class="menu-button"
+            popovertarget="site-menu"
+            popovertargetaction="toggle"
+            aria-controls="site-menu"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+            data-i18n-attr="aria-label:nav.menuOpen"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+            <span data-i18n="nav.menuLabel">Menu</span>
+          </button>
+
+          <ul id="site-menu" class="site-menu">
             <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
             <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
             <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li class="site-menu-cta">
+              <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="nav.cta">Start a Project</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
+          <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-attr="aria-label:nav.ariaLang">
             <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
             <button type="button" class="lang-btn" data-lang-btn="fr" aria-pressed="false">FR</button>
           </div>
           <a class="btn btn-primary btn-sm header-cta" href="contact.html" data-i18n="nav.cta">
             Start a Project
           </a>
-          <button
-            type="button"
-            id="nav-toggle"
-            class="nav-toggle"
-            aria-controls="nav-mobile"
-            aria-expanded="false"
-            aria-label="Open navigation menu"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
-            </svg>
-          </button>
         </div>
       </div>
-
-      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="nav-mobile-actions">
-          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Start a Project</a>
-        </div>
-      </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section class="page-hero">
         <div class="container">
-          <span class="eyebrow" data-i18n="contact.hero.eyebrow">Contact</span>
+          <span class="eyebrow" data-i18n="contact.hero.eyebrow">Contact &amp; Quotes</span>
           <h1 class="gradient-text" data-i18n="contact.hero.title">Tell us about your project.</h1>
           <p data-i18n="contact.hero.lead">
-            Have a product idea, technical bottleneck, or modernization roadmap? Drop us a note and we’ll respond promptly.
+            Request a project quote, book a technical audit, plan an AI team training, or start a general conversation.
           </p>
         </div>
       </section>
@@ -101,9 +106,26 @@
               </div>
               <div>
                 <h2 class="card-title" style="font-size: var(--text-lg)" data-i18n="contact.info.email.title">Direct Email</h2>
-                <p style="margin-bottom: 0.35rem"><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></p>
+                <div class="copy-inline" style="margin-bottom: 0.45rem">
+                  <a id="direct-email-address" href="mailto:contact@siriusds.fr">contact@siriusds.fr</a>
+                  <button
+                    type="button"
+                    class="copy-btn"
+                    command="--copy"
+                    commandfor="direct-email-address"
+                    aria-label="Copy email address"
+                    data-i18n-attr="aria-label:copy.emailLabel"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" />
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                    </svg>
+                    <span data-i18n="copy.btn">Copy</span>
+                  </button>
+                  <span class="copy-tip" role="status"></span>
+                </div>
                 <p style="font-size: var(--text-sm)" data-i18n="contact.info.email.note">
-                  Ideal for RFPs, technical briefs, or quick introductions.
+                  Ideal for RFPs, technical briefs, training inquiries, or introductions.
                 </p>
               </div>
             </div>
@@ -137,16 +159,38 @@
                 </p>
               </div>
             </div>
+
+            <div class="contact-info-item">
+              <div class="card-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <div>
+                <h2 class="card-title" style="font-size: var(--text-lg)" data-i18n="nav.careers">Join Us</h2>
+                <p style="font-size: var(--text-sm); margin-bottom: 0.4rem" data-i18n="careers.roles.lead">
+                  Whether you are looking for a permanent role, freelance partnership, or an internship, select a track below to pre-fill your application.
+                </p>
+                <a href="careers.html" style="font-size: var(--text-sm); font-weight: 600" data-i18n="careers.hero.cta">
+                  Submit an Application
+                </a>
+              </div>
+            </div>
           </div>
 
-          <!-- Contact Form -->
+          <!-- Enriched Contact Form -->
           <div class="card">
-            <h2 class="card-title" data-i18n="contact.form.title">Send a message</h2>
+            <h2 id="contact-form-heading" class="card-title" data-i18n="contact.form.title">
+              Request a Quote, Audit or Consultation
+            </h2>
 
             <!-- Replace data-form-endpoint with your Formspree / Web3Forms endpoint when ready -->
             <form
               id="contact-form"
               class="form-grid"
+              aria-labelledby="contact-form-heading"
               data-form-endpoint="https://formspree.io/f/YOUR_FORM_ID"
               data-fallback-email="contact@siriusds.fr"
               novalidate
@@ -161,6 +205,42 @@
                 aria-hidden="true"
               />
 
+              <!-- Request Type Selector -->
+              <fieldset class="form-fieldset">
+                <legend class="form-legend" data-i18n="contact.form.typeLegend">How can we help?</legend>
+                <div class="radio-card-group">
+                  <label class="radio-card" for="type-quote">
+                    <input id="type-quote" type="radio" name="requestType" value="quote" checked />
+                    <span class="radio-card-copy">
+                      <span class="radio-card-title" data-i18n="contact.form.type.quote">Project Quote</span>
+                      <span class="radio-card-desc" data-i18n="contact.form.type.quoteDesc">New app, portal, or CMS/ECM integration</span>
+                    </span>
+                  </label>
+                  <label class="radio-card" for="type-audit">
+                    <input id="type-audit" type="radio" name="requestType" value="audit" />
+                    <span class="radio-card-copy">
+                      <span class="radio-card-title" data-i18n="contact.form.type.audit">Technical Audit</span>
+                      <span class="radio-card-desc" data-i18n="contact.form.type.auditDesc">Code quality, architecture, or CI/CD review</span>
+                    </span>
+                  </label>
+                  <label class="radio-card" for="type-training">
+                    <input id="type-training" type="radio" name="requestType" value="training" />
+                    <span class="radio-card-copy">
+                      <span class="radio-card-title" data-i18n="contact.form.type.training">AI &amp; Team Training</span>
+                      <span class="radio-card-desc" data-i18n="contact.form.type.trainingDesc">Second Brain, custom skills, or workshops</span>
+                    </span>
+                  </label>
+                  <label class="radio-card" for="type-general">
+                    <input id="type-general" type="radio" name="requestType" value="general" />
+                    <span class="radio-card-copy">
+                      <span class="radio-card-title" data-i18n="contact.form.type.general">General Inquiry</span>
+                      <span class="radio-card-desc" data-i18n="contact.form.type.generalDesc">Discovery call, partnership, or question</span>
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Core Contact Details -->
               <div class="form-row-2">
                 <div class="form-field">
                   <label for="contact-name" data-i18n="contact.form.name">Full Name *</label>
@@ -170,10 +250,13 @@
                     type="text"
                     class="form-control"
                     autocomplete="name"
+                    enterkeyhint="next"
                     required
+                    aria-describedby="contact-name-error"
                     placeholder="Alex Martin"
                     data-i18n-attr="placeholder:contact.form.namePh"
                   />
+                  <span id="contact-name-error" class="field-error" aria-live="polite"></span>
                 </div>
 
                 <div class="form-field">
@@ -182,12 +265,19 @@
                     id="contact-email"
                     name="email"
                     type="email"
+                    inputmode="email"
+                    autocorrect="off"
+                    autocapitalize="none"
+                    spellcheck="false"
                     class="form-control"
                     autocomplete="email"
+                    enterkeyhint="next"
                     required
+                    aria-describedby="contact-email-error"
                     placeholder="alex@company.com"
                     data-i18n-attr="placeholder:contact.form.emailPh"
                   />
+                  <span id="contact-email-error" class="field-error" aria-live="polite"></span>
                 </div>
               </div>
 
@@ -200,58 +290,197 @@
                     type="text"
                     class="form-control"
                     autocomplete="organization"
+                    enterkeyhint="next"
                     placeholder="Acme SAS"
                     data-i18n-attr="placeholder:contact.form.companyPh"
                   />
                 </div>
 
                 <div class="form-field">
-                  <label for="contact-service" data-i18n="contact.form.service">Area of Interest</label>
-                  <select id="contact-service" name="service" class="form-control">
-                    <option value="web" data-i18n="contact.form.service.opt1">Web &amp; Mobile Application</option>
-                    <option value="cloud" data-i18n="contact.form.service.opt2">Cloud &amp; DevOps Architecture</option>
-                    <option value="data" data-i18n="contact.form.service.opt3">Data Engineering &amp; Analytics</option>
-                    <option value="ai" data-i18n="contact.form.service.opt4">AI Integration &amp; Automation</option>
-                    <option value="audit" data-i18n="contact.form.service.opt5">Technical Audit / Consulting</option>
-                  </select>
+                  <label for="contact-phone" data-i18n="contact.form.phone">Phone (Optional)</label>
+                  <input
+                    id="contact-phone"
+                    name="phone"
+                    type="tel"
+                    inputmode="tel"
+                    class="form-control"
+                    autocomplete="tel"
+                    enterkeyhint="next"
+                    placeholder="+33 6 12 34 56 78"
+                    data-i18n-attr="placeholder:contact.form.phonePh"
+                  />
                 </div>
               </div>
 
               <div class="form-field">
-                <label for="contact-budget" data-i18n="contact.form.budget">Estimated Budget (Optional)</label>
-                <select id="contact-budget" name="budget" class="form-control">
-                  <option value="undecided" data-i18n="contact.form.budget.opt0">Prefer to discuss later</option>
-                  <option value="<5k" data-i18n="contact.form.budget.opt1">&lt; €5,000</option>
-                  <option value="5k-15k" data-i18n="contact.form.budget.opt2">€5,000 – €15,000</option>
-                  <option value="15k-40k" data-i18n="contact.form.budget.opt3">€15,000 – €40,000</option>
-                  <option value="40k+" data-i18n="contact.form.budget.opt4">€40,000+</option>
+                <label for="contact-service" data-i18n="contact.form.service">Area of Interest</label>
+                <select id="contact-service" name="service" class="form-control">
+                  <option value="web" data-i18n="contact.form.service.opt1">Web &amp; Backend Development (Symfony, Spring Boot, Angular, React)</option>
+                  <option value="cms" data-i18n="contact.form.service.opt2">CMS, DXP &amp; Editor Integration (TYPO3, Ibexa, Nuxeo)</option>
+                  <option value="cicd" data-i18n="contact.form.service.opt3">CI/CD &amp; Release Automation (GitLab, GitHub, Azure)</option>
+                  <option value="ai" data-i18n="contact.form.service.opt4">Applied AI (Second Brain, Skills &amp; Team Training)</option>
+                  <option value="audit" data-i18n="contact.form.service.opt5">Technical Audit / Consulting</option>
                 </select>
               </div>
 
+              <!-- Quote-specific fields -->
+              <fieldset class="form-fieldset" data-request-section="quote">
+                <legend class="form-legend" data-i18n="contact.form.quoteLegend">Project Scope &amp; Budget</legend>
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="contact-engagement" data-i18n="contact.form.engagement">Engagement Model</label>
+                    <select id="contact-engagement" name="engagement" class="form-control">
+                      <option value="mvp" data-i18n="contact.form.eng.mvp">Fixed-Scope Delivery / MVP</option>
+                      <option value="embedded" data-i18n="contact.form.eng.embedded">Embedded Senior Engineering</option>
+                      <option value="undecided" data-i18n="contact.form.eng.undecided">To be defined together</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="contact-budget" data-i18n="contact.form.budget">Estimated Budget (Optional)</label>
+                    <select id="contact-budget" name="budget" class="form-control">
+                      <option value="undecided" data-i18n="contact.form.budget.opt0">Prefer to discuss later</option>
+                      <option value="<5k" data-i18n="contact.form.budget.opt1">&lt; €5,000</option>
+                      <option value="5k-15k" data-i18n="contact.form.budget.opt2">€5,000 – €15,000</option>
+                      <option value="15k-40k" data-i18n="contact.form.budget.opt3">€15,000 – €40,000</option>
+                      <option value="40k+" data-i18n="contact.form.budget.opt4">€40,000+</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="contact-timeline" data-i18n="contact.form.timeline">Target Timeline</label>
+                  <select id="contact-timeline" name="timeline" class="form-control">
+                    <option value="asap" data-i18n="contact.form.time.asap">Immediate (&lt; 1 month)</option>
+                    <option value="quarter" data-i18n="contact.form.time.quarter">1 – 3 months</option>
+                    <option value="later" data-i18n="contact.form.time.later">3+ months / Flexible</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <!-- Audit-specific fields -->
+              <fieldset class="form-fieldset" data-request-section="audit" hidden>
+                <legend class="form-legend" data-i18n="contact.form.auditLegend">Audit Scope</legend>
+                <div class="checkbox-grid">
+                  <div class="checkbox-row">
+                    <input id="audit-arch" type="checkbox" name="auditScope" value="architecture" checked />
+                    <label for="audit-arch" data-i18n="contact.form.audit.s1">Architecture &amp; Code Quality (Symfony / Spring Boot / JS)</label>
+                  </div>
+                  <div class="checkbox-row">
+                    <input id="audit-cms" type="checkbox" name="auditScope" value="cms" />
+                    <label for="audit-cms" data-i18n="contact.form.audit.s2">CMS &amp; Editor Performance (TYPO3 / Ibexa / Nuxeo)</label>
+                  </div>
+                  <div class="checkbox-row">
+                    <input id="audit-cicd" type="checkbox" name="auditScope" value="cicd" />
+                    <label for="audit-cicd" data-i18n="contact.form.audit.s3">CI/CD Pipelines (GitLab / GitHub / Azure)</label>
+                  </div>
+                  <div class="checkbox-row">
+                    <input id="audit-upgrade" type="checkbox" name="auditScope" value="upgrade" />
+                    <label for="audit-upgrade" data-i18n="contact.form.audit.s4">Upgrade &amp; Security Readiness</label>
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="audit-stack" data-i18n="contact.form.existingStack">Current Stack &amp; Context</label>
+                    <input
+                      id="audit-stack"
+                      name="existingStack"
+                      type="text"
+                      class="form-control"
+                      placeholder="e.g., Symfony 6, TYPO3 v12, Angular 17, GitLab CI..."
+                      data-i18n-attr="placeholder:contact.form.existingStackPh"
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="audit-timeline" data-i18n="contact.form.timeline">Target Timeline</label>
+                    <select id="audit-timeline" name="auditTimeline" class="form-control">
+                      <option value="asap" data-i18n="contact.form.time.asap">Immediate (&lt; 1 month)</option>
+                      <option value="quarter" data-i18n="contact.form.time.quarter">1 – 3 months</option>
+                      <option value="later" data-i18n="contact.form.time.later">3+ months / Flexible</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Training-specific fields -->
+              <fieldset class="form-fieldset" data-request-section="training" hidden>
+                <legend class="form-legend" data-i18n="contact.form.trainingLegend">Training &amp; AI Enablement</legend>
+                <div class="checkbox-grid">
+                  <div class="checkbox-row">
+                    <input id="train-skills" type="checkbox" name="trainingFocus" value="skills" checked />
+                    <label for="train-skills" data-i18n="contact.form.training.f1">AI Coding Workflows &amp; Custom Skills</label>
+                  </div>
+                  <div class="checkbox-row">
+                    <input id="train-brain" type="checkbox" name="trainingFocus" value="second-brain" />
+                    <label for="train-brain" data-i18n="contact.form.training.f2">Second Brain Knowledge Architecture</label>
+                  </div>
+                  <div class="checkbox-row">
+                    <input id="train-dev" type="checkbox" name="trainingFocus" value="frameworks" />
+                    <label for="train-dev" data-i18n="contact.form.training.f3">Modern Symfony / Angular / React Best Practices</label>
+                  </div>
+                  <div class="checkbox-row">
+                    <input id="train-cicd" type="checkbox" name="trainingFocus" value="cicd" />
+                    <label for="train-cicd" data-i18n="contact.form.training.f4">CI/CD &amp; Automated Quality Gates</label>
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="train-size" data-i18n="contact.form.teamSize">Team Size</label>
+                    <select id="train-size" name="teamSize" class="form-control">
+                      <option value="1-2" data-i18n="contact.form.team.1">Individual / 1–2 people</option>
+                      <option value="3-8" data-i18n="contact.form.team.small" selected>Small squad (3–8 people)</option>
+                      <option value="9-20" data-i18n="contact.form.team.medium">Department (9–20 people)</option>
+                      <option value="20+" data-i18n="contact.form.team.large">20+ people / Multiple squads</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="train-format" data-i18n="contact.form.format">Preferred Format</label>
+                    <select id="train-format" name="trainingFormat" class="form-control">
+                      <option value="remote" data-i18n="contact.form.fmt.remote">Remote live workshop</option>
+                      <option value="onsite" data-i18n="contact.form.fmt.onsite">On-site (France)</option>
+                      <option value="hybrid" data-i18n="contact.form.fmt.hybrid">Hybrid</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
               <div class="form-field">
-                <label for="contact-message" data-i18n="contact.form.message">Project Details *</label>
+                <label for="contact-message" data-i18n="contact.form.message">Project / Request Details *</label>
                 <textarea
                   id="contact-message"
                   name="message"
                   class="form-control"
                   required
-                  placeholder="Share your goals, timeline, and any existing stack details..."
+                  aria-describedby="contact-message-error"
+                  placeholder="Share your goals, key deliverables, timeline, and stack details..."
                   data-i18n-attr="placeholder:contact.form.messagePh"
                 ></textarea>
+                <span id="contact-message-error" class="field-error" aria-live="polite"></span>
               </div>
 
-              <label class="checkbox-row">
-                <input id="contact-consent" name="consent" type="checkbox" required />
-                <span data-i18n="contact.form.consent">
-                  I agree that SIRIUS Digital Solutions may process this information solely to respond to my inquiry, in line with the Privacy Policy.
-                </span>
-              </label>
+              <div class="form-field">
+                <div class="checkbox-row">
+                  <input
+                    id="contact-consent"
+                    name="consent"
+                    type="checkbox"
+                    required
+                    aria-describedby="contact-consent-error"
+                  />
+                  <label for="contact-consent" data-i18n="contact.form.consent">
+                    I agree that SIRIUS Digital Solutions may process this information solely to respond to my inquiry, in line with the Privacy Policy.
+                  </label>
+                </div>
+                <span id="contact-consent-error" class="field-error" aria-live="polite"></span>
+              </div>
 
               <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
 
               <div>
                 <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">
-                  Send Message
+                  Send Request
                 </button>
               </div>
             </form>
@@ -265,39 +494,44 @@
         <div class="footer-grid">
           <div class="footer-col">
             <a class="brand" href="index.html" style="margin-bottom: 1rem">
-              <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="34" height="34" />
+              <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" fill="none" aria-hidden="true">
+                <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+                <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+                <path d="M16 44c12.5 2 24.5-4.5 34-19" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+              </svg>
               <span class="brand-text">
                 <span class="brand-name">SIRIUS</span>
                 <span class="brand-sub">DIGITAL SOLUTIONS</span>
               </span>
             </a>
             <p style="font-size: var(--text-sm); max-width: 34ch" data-i18n="footer.tagline">
-              Engineering reliable web platforms, scalable cloud foundations, and intelligent automation tailored for modern teams.
+              Full-stack software engineering, enterprise CMS &amp; editor integrations, CI/CD automation, and practical AI enablement.
             </p>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.company">Company</h3>
+            <h2 class="footer-heading" data-i18n="footer.company">Company</h2>
             <ul class="footer-links">
               <li><a href="index.html" data-i18n="nav.home">Home</a></li>
               <li><a href="services.html" data-i18n="nav.services">Services</a></li>
               <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
               <li><a href="about.html" data-i18n="nav.about">About</a></li>
+              <li><a href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.solutions">Solutions</h3>
+            <h2 class="footer-heading" data-i18n="footer.solutions">Solutions</h2>
             <ul class="footer-links">
-              <li><a href="services.html" data-i18n="footer.sol.web">Web &amp; Mobile Apps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.cloud">Cloud &amp; DevOps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.data">Data Engineering</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.ai">AI &amp; Automation</a></li>
+              <li><a href="services.html#web-platforms" data-i18n="footer.sol.web">Web &amp; Backend Apps</a></li>
+              <li><a href="services.html#cms-integrations" data-i18n="footer.sol.cms">TYPO3, Ibexa &amp; Nuxeo</a></li>
+              <li><a href="services.html#cicd-devops" data-i18n="footer.sol.cicd">CI/CD (GitLab, GitHub, Azure)</a></li>
+              <li><a href="services.html#ai-training" data-i18n="footer.sol.ai">AI, Second Brain &amp; Training</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.connect">Connect</h3>
+            <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
             <ul class="footer-links">
               <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
               <li><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></li>
@@ -323,4 +557,3 @@
     <script src="assets/js/contact.js"></script>
   </body>
 </html>
-

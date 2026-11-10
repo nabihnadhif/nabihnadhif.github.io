@@ -22,7 +22,8 @@ Official static website for **SIRIUS Digital Solutions**, hosted via GitHub Page
     ├── services.html       # Services & Engagement Models + FAQ
     ├── portfolio.html      # Filterable Portfolio & Case Studies
     ├── about.html          # Company Philosophy, Principles & Stack
-    ├── contact.html        # Contact Form & Direct Info
+    ├── careers.html        # Join Us / Candidate Tracks & Application Form
+    ├── contact.html        # Quotes, Audits, AI Training & Contact Form
     ├── legal.html          # Mentions légales & Privacy Policy
     ├── 404.html            # Custom 404 Page
     ├── CNAME               # GitHub Pages custom domain (www.siriusds.fr)
@@ -30,7 +31,7 @@ Official static website for **SIRIUS Digital Solutions**, hosted via GitHub Page
     ├── sitemap.xml
     └── assets/
         ├── css/            # tokens, base, layout, components, pages
-        ├── images/         # favicon.png, sirius-logo.png
+        ├── images/         # favicon.svg, favicon.png, sirius-logo.png
         └── js/             # i18n, main, portfolio, contact
 ```
 
@@ -44,10 +45,10 @@ python3 -m http.server --directory docs 8080
 
 Then open <http://localhost:8080>.
 
-## Customization Before Go-Live
+## Customization Notes
 
-1. **Contact Form Endpoint**: Set `data-form-endpoint` in `docs/contact.html` to your Formspree or Web3Forms URL (until configured, submissions fall back to a pre-filled `mailto:contact@siriusds.fr` action).
-2. **Legal Disclosures**: Replace the bracketed placeholders (`legal.s1.li1`–`li4` for legal form, SIREN/SIRET, address, publication director) in `docs/assets/js/i18n.js`.
+1. **Contact Form Endpoint**: Set `data-form-endpoint` in `docs/contact.html` to your Formspree or Web3Forms URL (until configured, submissions generate a pre-filled `mailto:contact@siriusds.fr` action and a one-click copyable brief).
+2. **Legal Disclosures**: Add your registered SIRET / office address in `docs/assets/js/i18n.js` (`legal.s1.li1`–`li4`) when ready.
 3. **Portfolio & Bio**: Update `CASE_STUDIES` in `docs/assets/js/portfolio.js` and `about.team.bio` in `docs/assets/js/i18n.js`.
 
 ## GitHub Pages Deployment

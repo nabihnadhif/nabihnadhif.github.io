@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#041428" />
     <title>Legal Notice &amp; Privacy — SIRIUS Digital Solutions</title>
     <meta
       name="description"
       content="Legal notice (Mentions légales) and GDPR privacy policy for SIRIUS Digital Solutions."
     />
     <link rel="canonical" href="https://www.siriusds.fr/legal.html" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/tokens.css" />
@@ -23,61 +25,64 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="38" height="38" />
+          <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" fill="none" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+            <path d="M25 11H15a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H39" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" />
+            <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+            <path d="M11 33c3.5-4.5 10.5-3.2 12 2.2 1.2 4.2-2.5 8-6.4 6.7-2.6-.9-3.2-4-.8-5.4 1.6-.9 3.6.2 3.3 1.9" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+            <path d="M23 41c12.5 1.5 23-6 29-21" stroke="#7dd3fc" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M17 48c14.5 2 26.5-4.5 34.5-18.5" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round" />
+          </svg>
           <span class="brand-text">
             <span class="brand-name">SIRIUS</span>
             <span class="brand-sub">DIGITAL SOLUTIONS</span>
           </span>
         </a>
 
-        <nav class="nav-desktop" aria-label="Primary navigation">
-          <ul class="nav-list">
+        <nav class="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.ariaPrimary">
+          <button
+            type="button"
+            id="nav-toggle"
+            class="menu-button"
+            popovertarget="site-menu"
+            popovertargetaction="toggle"
+            aria-controls="site-menu"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+            data-i18n-attr="aria-label:nav.menuOpen"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+            <span data-i18n="nav.menuLabel">Menu</span>
+          </button>
+
+          <ul id="site-menu" class="site-menu">
             <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
             <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
             <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li class="site-menu-cta">
+              <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="nav.cta">Start a Project</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
+          <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-attr="aria-label:nav.ariaLang">
             <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
             <button type="button" class="lang-btn" data-lang-btn="fr" aria-pressed="false">FR</button>
           </div>
           <a class="btn btn-primary btn-sm header-cta" href="contact.html" data-i18n="nav.cta">
             Start a Project
           </a>
-          <button
-            type="button"
-            id="nav-toggle"
-            class="nav-toggle"
-            aria-controls="nav-mobile"
-            aria-expanded="false"
-            aria-label="Open navigation menu"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
-            </svg>
-          </button>
         </div>
       </div>
-
-      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="nav-mobile-actions">
-          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Start a Project</a>
-        </div>
-      </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <section class="page-hero">
         <div class="container">
           <span class="eyebrow" data-i18n="legal.hero.eyebrow">Legal &amp; Compliance</span>
@@ -130,7 +135,11 @@
         <div class="footer-grid">
           <div class="footer-col">
             <a class="brand" href="index.html" style="margin-bottom: 1rem">
-              <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="34" height="34" />
+              <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" fill="none" aria-hidden="true">
+                <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+                <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+                <path d="M16 44c12.5 2 24.5-4.5 34-19" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+              </svg>
               <span class="brand-text">
                 <span class="brand-name">SIRIUS</span>
                 <span class="brand-sub">DIGITAL SOLUTIONS</span>
@@ -142,27 +151,28 @@
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.company">Company</h3>
+            <h2 class="footer-heading" data-i18n="footer.company">Company</h2>
             <ul class="footer-links">
               <li><a href="index.html" data-i18n="nav.home">Home</a></li>
               <li><a href="services.html" data-i18n="nav.services">Services</a></li>
               <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
               <li><a href="about.html" data-i18n="nav.about">About</a></li>
+              <li><a href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.solutions">Solutions</h3>
+            <h2 class="footer-heading" data-i18n="footer.solutions">Solutions</h2>
             <ul class="footer-links">
-              <li><a href="services.html" data-i18n="footer.sol.web">Web &amp; Mobile Apps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.cloud">Cloud &amp; DevOps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.data">Data Engineering</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.ai">AI &amp; Automation</a></li>
+              <li><a href="services.html#web-platforms" data-i18n="footer.sol.web">Web &amp; Backend Apps</a></li>
+              <li><a href="services.html#cms-integrations" data-i18n="footer.sol.cms">TYPO3, Ibexa &amp; Nuxeo</a></li>
+              <li><a href="services.html#cicd-devops" data-i18n="footer.sol.cicd">CI/CD (GitLab, GitHub, Azure)</a></li>
+              <li><a href="services.html#ai-training" data-i18n="footer.sol.ai">AI, Second Brain &amp; Training</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.connect">Connect</h3>
+            <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
             <ul class="footer-links">
               <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
               <li><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></li>
@@ -187,4 +197,3 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
-

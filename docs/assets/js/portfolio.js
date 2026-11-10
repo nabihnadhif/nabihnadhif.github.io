@@ -1,186 +1,243 @@
 (() => {
   const CASE_STUDIES = {
-    "saas-portal": {
+    "ibexa-portal": {
       category: "web",
-      stack: ["TypeScript", "Next.js", "PostgreSQL", "Stripe", "Docker"],
+      contactService: "cms",
+      stack: ["PHP", "Symfony", "Ibexa DXP", "React", "Docker"],
       en: {
-        sector: "B2B SaaS · FinTech",
-        title: "Multi-Tenant Client & Billing Portal",
+        sector: "Enterprise Portal · PHP / Ibexa DXP",
+        metric: "2.4x editorial velocity",
+        title: "Multi-Site Customer & Editorial Portal",
         challenge:
-          "A growing financial services provider relied on spreadsheets and manual PDFs to onboard enterprise clients and reconcile monthly usage billing.",
+          "A multi-brand organization maintained fragmented legacy sites with slow editorial publishing and duplicated customer authentication.",
         solution:
-          "Designed and shipped a role-based customer portal with automated invoice generation, SSO authentication, and real-time usage dashboards.",
+          "Architected a unified Ibexa DXP & Symfony backend exposing clean APIs to React front-end modules, complete with role-based permissions and SSO.",
         outcomes: [
-          "65% faster client onboarding time",
-          "Zero billing reconciliation discrepancies across 40+ enterprise accounts",
-          "99.95% uptime SLA with automated E2E regression checks"
+          "Editorial publishing workflow cut from hours to minutes across 4 regional sites",
+          "Shared Symfony core eliminated duplicated authentication & business rules",
+          "Core Web Vitals green across desktop and mobile client portals"
         ]
       },
       fr: {
-        sector: "SaaS B2B · FinTech",
-        title: "Portail client multi-tenant & facturation",
+        sector: "Portail Entreprise · PHP / Ibexa DXP",
+        metric: "Vélocité x2,4",
+        title: "Portail client multi-sites & plateforme éditoriale",
         challenge:
-          "Un prestataire financier en croissance s’appuyait sur des tableurs et PDF manuels pour l’onboarding client et le suivi de facturation mensuelle.",
+          "Une organisation multi-marques maintenait des sites cloisonnés avec une publication lente et une authentification client dupliquée.",
         solution:
-          "Conception et mise en production d’un portail sécurisé avec rôles, facturation automatisée, SSO et tableaux de bord temps réel.",
+          "Architecture unifiée sous Ibexa DXP et Symfony exposant des APIs propres vers des modules React, avec gestion fine des droits et SSO.",
         outcomes: [
-          "Réduction de 65 % du délai d’onboarding client",
-          "Zéro écart de facturation sur plus de 40 comptes entreprises",
-          "Disponibilité de 99,95 % avec tests E2E automatisés"
+          "Temps de mise en ligne éditoriale réduit sur 4 sites régionaux",
+          "Socle Symfony mutualisé supprimant les doublons d’authentification",
+          "Performances Core Web Vitals au vert sur desktop et mobile"
         ]
       }
     },
-    "cloud-lakehouse": {
-      category: "cloud",
-      stack: ["Google Cloud", "BigQuery", "dbt", "Terraform", "GitHub Actions"],
-      en: {
-        sector: "Retail & Logistics · Cloud & Data",
-        title: "Unified Cloud Data Warehouse & CI/CD",
-        challenge:
-          "Siloed ERP, e-commerce, and warehouse exports caused 48-hour reporting delays and conflicting KPI definitions across teams.",
-        solution:
-          "Provisioned an Infrastructure-as-Code BigQuery lakehouse with modular dbt models, automated data quality assertions, and scheduled orchestration.",
-        outcomes: [
-          "Reporting latency reduced from 48 hours to 15 minutes",
-          "Single governed KPI layer shared across Finance and Ops",
-          "32% cloud query cost savings via partitioning & clustering"
-        ]
-      },
-      fr: {
-        sector: "Retail & Logistique · Cloud & Data",
-        title: "Entrepôt de données Cloud unifié & CI/CD",
-        challenge:
-          "Des exports ERP, e-commerce et entrepôt cloisonnés entraînaient 48h de retard de reporting et des KPI contradictoires.",
-        solution:
-          "Déploiement d’un socle BigQuery via Terraform avec transformations dbt modulaires, tests de qualité automatisés et orchestration planifiée.",
-        outcomes: [
-          "Latence de reporting réduite de 48h à 15 minutes",
-          "Référentiel KPI unique partagé entre Finance et Opérations",
-          "32 % d’économies sur les requêtes cloud grâce au partitionnement"
-        ]
-      }
-    },
-    "ai-ops-copilot": {
-      category: "ai",
-      stack: ["Python", "FastAPI", "Vertex AI / LLMs", "pgvector", "Cloud Run"],
-      en: {
-        sector: "Operations · AI & Automation",
-        title: "Internal Knowledge & Document Triage Assistant",
-        challenge:
-          "Support engineers spent hours manually searching fragmented PDFs, runbooks, and past tickets to resolve recurring customer inquiries.",
-        solution:
-          "Built a citation-backed RAG assistant with automated document indexing, confidence scoring, and one-click draft responses for human review.",
-        outcomes: [
-          "45% reduction in average ticket first-response time",
-          "100% source citations with zero unverified auto-sends",
-          "Serverless deployment scaling cleanly to zero off-hours"
-        ]
-      },
-      fr: {
-        sector: "Opérations · IA & Automatisation",
-        title: "Assistant documentaire & triage de tickets",
-        challenge:
-          "Les équipes support passaient plusieurs heures à chercher des réponses dans des PDF, procédures et anciens tickets dispersés.",
-        solution:
-          "Développement d’un assistant RAG avec citations de sources, indexation automatisée, score de confiance et brouillons validés par l’humain.",
-        outcomes: [
-          "Temps de première réponse réduit de 45 %",
-          "100 % des réponses sourcées sans envoi autonome non vérifié",
-          "Déploiement serverless avec coût nul hors heures ouvrées"
-        ]
-      }
-    },
-    "booking-platform": {
+    "nuxeo-integration": {
       category: "web",
-      stack: ["HTML/CSS", "TypeScript", "Node.js", "PostgreSQL", "Cloudflare"],
+      contactService: "cms",
+      stack: ["Java", "Spring Boot", "Nuxeo ECM", "Angular", "REST API"],
       en: {
-        sector: "Healthcare / Services · Web Platform",
-        title: "High-Speed Booking & Scheduling Web App",
+        sector: "Content & ECM · Java / Nuxeo",
+        metric: "Zero manual asset sync",
+        title: "Enterprise Content Hub & Nuxeo Integration",
         challenge:
-          "Legacy appointment software suffered from slow mobile load times, high abandonment rates, and manual SMS reminders.",
+          "Product documents and media assets stored in Nuxeo required manual exports before appearing in customer-facing Angular applications.",
         solution:
-          "Rebuilt the customer-facing booking flow with mobile-first UX, real-time slot locking, and automated calendar notifications.",
+          "Built a Spring Boot integration layer bridging Nuxeo ECM workflows, automated metadata indexing, and a responsive Angular workspace.",
         outcomes: [
-          "Lighthouse performance score improved from 54 to 98",
-          "28% uplift in completed mobile bookings",
-          "Automated reminders cut no-shows by half"
+          "Real-time synchronization of approved assets from Nuxeo to web portals",
+          "Strict access control and audit trail preserved end-to-end",
+          "Eliminated manual CSV/PDF exports across product and legal teams"
         ]
       },
       fr: {
-        sector: "Santé / Services · Plateforme Web",
-        title: "Application de réservation haute performance",
+        sector: "GED & Contenu · Java / Nuxeo",
+        metric: "Zéro synchro manuelle",
+        title: "Hub documentaire & intégration Nuxeo ECM",
         challenge:
-          "L’outil existant souffrait de lenteurs mobiles, d’un fort taux d’abandon et de rappels manuels chronophages.",
+          "Les documents et médias stockés dans Nuxeo nécessitaient des exports manuels avant d’alimenter les applications clients Angular.",
         solution:
-          "Refonte complète du parcours mobile-first avec verrouillage de créneaux en temps réel et notifications calendrier automatisées.",
+          "Développement d’une passerelle Spring Boot connectée aux workflows Nuxeo, avec indexation de métadonnées et interface Angular réactive.",
         outcomes: [
-          "Score de performance Lighthouse passé de 54 à 98",
-          "+28 % de réservations finalisées sur mobile",
-          "Rendez-vous non honorés divisés par deux"
+          "Diffusion temps réel des documents validés depuis Nuxeo vers le portail",
+          "Traçabilité et contrôle d’accès conservés de bout en bout",
+          "Suppression des exports manuels entre équipes produit et conformité"
         ]
       }
     },
-    "devops-modernization": {
-      category: "cloud",
-      stack: ["Kubernetes", "Terraform", "Prometheus", "OpenTelemetry", "GitHub Actions"],
+    "typo3-modernization": {
+      category: "web",
+      contactService: "web",
+      stack: ["PHP", "TYPO3", "Symfony", "React", "TypeScript"],
       en: {
-        sector: "Industrial SaaS · DevOps",
-        title: "Zero-Downtime Release & Observability Upgrade",
+        sector: "Digital Experience · TYPO3 & React",
+        metric: "+38% mobile conversion",
+        title: "TYPO3 Platform Modernization & Headless UI",
         challenge:
-          "Manual server deployments required late-night maintenance windows and lacked visibility into microservice bottlenecks.",
+          "An aging TYPO3 installation suffered from legacy template coupling, slow page loads, and risky manual upgrades.",
         solution:
-          "Standardized containerized deployments with canary rollouts, OpenTelemetry tracing, and actionable SLO dashboards.",
+          "Upgraded TYPO3 to LTS with clean Symfony-aligned extensions and decoupled interactive customer journeys in React & TypeScript.",
         outcomes: [
-          "Deployments shifted from monthly nights to daily daytime releases",
-          "Mean time to detect (MTTD) incidents cut under 3 minutes",
-          "Full audit trail across staging and production environments"
+          "38% uplift in completed mobile self-service journeys",
+          "Clean LTS upgrade path with automated regression tests",
+          "Editors retained familiar TYPO3 workflows while gaining instant previews"
         ]
       },
       fr: {
-        sector: "SaaS Industriel · DevOps",
-        title: "Déploiements sans interruption & Observabilité",
+        sector: "Expérience Digitale · TYPO3 & React",
+        metric: "+38 % conversion mobile",
+        title: "Modernisation TYPO3 & Front-End découplé",
         challenge:
-          "Les mises en production manuelles imposaient des fenêtres nocturnes sans visibilité fine sur les ralentissements.",
+          "Une plateforme TYPO3 vieillissante souffrait d’un fort couplage applicatif, de lenteurs et de montées de version risquées.",
         solution:
-          "Standardisation conteneurisée avec déploiements progressifs, traces OpenTelemetry et tableaux de bord SLO.",
+          "Migration vers TYPO3 LTS avec extensions structurées selon les standards Symfony et parcours interactifs en React & TypeScript.",
         outcomes: [
-          "Mises en production passées de mensuelles (nuit) à quotidiennes",
-          "Détection d’incidents (MTTD) ramenée sous 3 minutes",
-          "Traçabilité complète entre pré-production et production"
+          "+38 % de parcours finalisés sur mobile",
+          "Trajectoire LTS pérenne couverte par des tests automatisés",
+          "Confort éditorial TYPO3 conservé avec prévisualisation instantanée"
         ]
       }
     },
-    "invoice-extraction": {
+    "cicd-platform": {
+      category: "cicd",
+      contactService: "cicd",
+      stack: ["GitLab CI", "GitHub Actions", "Azure DevOps", "Docker", "SonarQube"],
+      en: {
+        sector: "DevOps & Quality · CI/CD Automation",
+        metric: "4x faster releases",
+        title: "Multi-Repo CI/CD & Automated Quality Gates",
+        challenge:
+          "Engineering squads deployed Symfony, Spring Boot, and Angular services manually, leading to environment drift and late bug discovery.",
+        solution:
+          "Standardized reusable CI/CD templates across GitLab CI, GitHub Actions, and Azure DevOps with containerized builds and automated quality gates.",
+        outcomes: [
+          "Release cycle time cut by 4x with repeatable staging & production rollouts",
+          "Automated unit, integration, and security checks on every pull request",
+          "Consistent Docker build parity from developer laptop to production"
+        ]
+      },
+      fr: {
+        sector: "DevOps & Qualité · Automatisation CI/CD",
+        metric: "Livraisons 4x plus rapides",
+        title: "Pipelines CI/CD multi-dépôts & Quality Gates",
+        challenge:
+          "Les déploiements manuels de services Symfony, Spring Boot et Angular généraient des écarts d’environnement et des régressions tardives.",
+        solution:
+          "Standardisation de templates CI/CD réutilisables sous GitLab CI, GitHub Actions et Azure DevOps avec builds conteneurisés et contrôles qualité.",
+        outcomes: [
+          "Temps de mise en production divisé par 4 entre pré-prod et prod",
+          "Tests unitaires, intégration et scans sécurité exécutés à chaque PR",
+          "Parité complète des builds Docker du poste développeur au serveur"
+        ]
+      }
+    },
+    "ai-second-brain": {
       category: "ai",
-      stack: ["Python", "Document AI", "BigQuery", "Cloud Workflows", "REST API"],
+      contactService: "ai",
+      stack: ["Second Brain", "AI Skills", "MCP", "Markdown", "Workflows"],
       en: {
-        sector: "Finance Ops · AI & Automation",
-        title: "Automated Supplier Invoice Extraction Pipeline",
+        sector: "Knowledge & Productivity · Applied AI",
+        metric: "-50% onboarding ramp",
+        title: "Engineering Second Brain & Custom AI Skills",
         challenge:
-          "Accounting teams manually keyed line items from hundreds of heterogeneous supplier PDFs every week.",
+          "Architecture decisions, CMS runbooks, and project conventions were scattered across wikis, chats, and individual developer notes.",
         solution:
-          "Implemented an automated ingestion pipeline combining OCR extraction, validation rules, and exception routing into the ERP.",
+          "Designed a structured Second Brain repository paired with custom AI agent skills so developers and assistants retrieve verified context instantly.",
         outcomes: [
-          "80% of standard invoices processed touch-free",
-          "Validation exceptions flagged automatically with bounding-box context",
-          "Saved 20+ hours of manual data entry per week"
+          "50% faster onboarding for new engineers joining Symfony & Angular repos",
+          "Reusable AI skills enforcing team code conventions and review checklists",
+          "Zero vendor lock-in using portable Markdown and Git version control"
         ]
       },
       fr: {
-        sector: "Finance Ops · IA & Automatisation",
-        title: "Extraction automatisée de factures fournisseurs",
+        sector: "Connaissance & Productivité · IA Appliquée",
+        metric: "Onboarding réduit de 50 %",
+        title: "Second Brain technique & Skills IA sur mesure",
         challenge:
-          "Les équipes comptables saisissaient manuellement les lignes de centaines de factures PDF hétérogènes chaque semaine.",
+          "Décisions d’architecture, procédures CMS et conventions de code étaient dispersées entre wikis, messageries et notes personnelles.",
         solution:
-          "Mise en place d’un pipeline combinant extraction OCR, règles de validation métier et routage des exceptions vers l’ERP.",
+          "Conception d’un Second Brain structuré couplé à des skills d’agents IA sur mesure pour accéder instantanément à un contexte fiable.",
         outcomes: [
-          "80 % des factures standards traitées sans saisie manuelle",
-          "Anomalies signalées automatiquement avec contexte visuel",
-          "Plus de 20 heures économisées chaque semaine"
+          "Montée en autonomie réduite de 50 % sur les dépôts Symfony & Angular",
+          "Skills IA réutilisables appliquant les standards et revues de l’équipe",
+          "Format Markdown portable sous Git sans dépendance éditeur"
+        ]
+      }
+    },
+    "ai-team-training": {
+      category: "ai",
+      contactService: "ai",
+      stack: ["AI Training", "Workshops", "Code Review", "Agent Skills", "Best Practices"],
+      en: {
+        sector: "Enablement · AI Team Training",
+        metric: "100% squad adoption",
+        title: "Applied AI Enablement & Developer Training",
+        challenge:
+          "Development teams used AI tools ad-hoc without shared guardrails, resulting in inconsistent code quality and missed productivity gains.",
+        solution:
+          "Delivered tailored workshops, live refactoring labs on real Symfony/Angular/Spring Boot repos, and reusable prompt & skill playbooks.",
+        outcomes: [
+          "Consistent, review-ready AI-assisted coding workflows across the team",
+          "Practical guardrails for security, testing, and architecture reviews",
+          "Teams equipped to author and maintain their own custom AI skills"
+        ]
+      },
+      fr: {
+        sector: "Montée en compétence · Formation IA",
+        metric: "100 % d’adoption équipe",
+        title: "Programme de formation IA & ateliers pratiques",
+        challenge:
+          "Les équipes utilisaient l’IA de façon isolée sans cadre partagé, créant des écarts de qualité et peu de gains durables.",
+        solution:
+          "Animation d’ateliers pratiques sur de vrais dépôts Symfony, Angular et Spring Boot, avec création de playbooks et skills réutilisables.",
+        outcomes: [
+          "Workflows de développement assisté par IA homogènes et fiables",
+          "Garde-fous concrets pour la sécurité, les tests et les revues de code",
+          "Équipes autonomes pour créer et maintenir leurs propres skills IA"
         ]
       }
     }
   };
+
+  const TOTAL_PROJECTS = Object.keys(CASE_STUDIES).length;
+
+  let supportsDisplayTransition;
+  function canTransitionDisplay() {
+    if (supportsDisplayTransition !== undefined) return supportsDisplayTransition;
+    if (!window.CSS?.supports?.("transition-behavior", "allow-discrete") || !document.body) {
+      return false;
+    }
+    const probe = document.createElement("div");
+    probe.style.cssText = "transition: display 1s allow-discrete !important; display: block;";
+    document.body.appendChild(probe);
+    getComputedStyle(probe).display;
+    probe.style.display = "none";
+    supportsDisplayTransition = getComputedStyle(probe).display === "block";
+    probe.remove();
+    return supportsDisplayTransition;
+  }
+
+  function supportsTopLayerExit() {
+    return Boolean(window.CSS?.supports?.("overlay", "auto") && canTransitionDisplay());
+  }
+
+  async function closeTopLayer(dialog) {
+    if (!dialog.open) return;
+    if (!supportsTopLayerExit()) {
+      dialog.setAttribute("data-closing", "");
+      const animations = dialog.getAnimations({ subtree: true });
+      if (animations.length > 0) {
+        await Promise.race([
+          Promise.allSettled(animations.map((a) => a.finished)),
+          new Promise((resolve) => setTimeout(resolve, 400))
+        ]);
+      }
+      if (!dialog.hasAttribute("data-closing")) return;
+      dialog.removeAttribute("data-closing");
+    }
+    dialog.close();
+  }
 
   function getLang() {
     return window.SiriusI18n?.getLang() || "en";
@@ -194,16 +251,18 @@
     const lang = getLang();
     document.querySelectorAll("[data-project-id]").forEach((card) => {
       const id = card.getAttribute("data-project-id");
-      const data = CASE_STUDIES[id]?.[lang];
+      const data = CASE_STUDIES[id]?.[lang] || CASE_STUDIES[id]?.en;
       if (!data) return;
 
       const sectorEl = card.querySelector("[data-project-sector]");
       const titleEl = card.querySelector("[data-project-title]");
       const summaryEl = card.querySelector("[data-project-summary]");
+      const metricEl = card.querySelector("[data-project-metric]");
 
       if (sectorEl) sectorEl.textContent = data.sector;
       if (titleEl) titleEl.textContent = data.title;
       if (summaryEl) summaryEl.textContent = data.challenge;
+      if (metricEl) metricEl.textContent = data.metric;
     });
   }
 
@@ -233,7 +292,10 @@
       });
 
       if (countEl) {
-        countEl.textContent = t("portfolio.count.label", { count: visibleCount });
+        countEl.textContent = t("portfolio.count.label", {
+          count: visibleCount,
+          total: TOTAL_PROJECTS
+        });
       }
     }
 
@@ -244,7 +306,8 @@
     });
 
     if (dialog) {
-      const closeBtn = dialog.querySelector("[data-dialog-close]");
+      const closeBtns = dialog.querySelectorAll("[data-dialog-close]");
+      const ctaLink = dialog.querySelector("[data-dialog-cta]");
 
       function populateDialog(projectId) {
         const study = CASE_STUDIES[projectId];
@@ -259,38 +322,69 @@
         dialog.querySelector("[data-dialog-solution]").textContent = copy.solution;
 
         const outcomesList = dialog.querySelector("[data-dialog-outcomes]");
-        outcomesList.innerHTML = "";
-        copy.outcomes.forEach((item) => {
+        const outcomeItems = copy.outcomes.map((item) => {
           const li = document.createElement("li");
           li.textContent = item;
-          outcomesList.appendChild(li);
+          return li;
         });
+        outcomesList.replaceChildren(...outcomeItems);
 
         const stackList = dialog.querySelector("[data-dialog-stack]");
-        stackList.innerHTML = "";
-        study.stack.forEach((tech) => {
+        const stackItems = study.stack.map((tech) => {
           const span = document.createElement("span");
           span.className = "tag";
           span.textContent = tech;
-          stackList.appendChild(span);
+          return span;
         });
+        stackList.replaceChildren(...stackItems);
+
+        if (ctaLink) {
+          const serviceParam = study.contactService || study.category;
+          ctaLink.setAttribute("href", `contact.html?service=${encodeURIComponent(serviceParam)}`);
+        }
       }
 
       grid.addEventListener("click", (event) => {
         const trigger = event.target.closest("[data-open-project]");
         if (!trigger) return;
         const projectId = trigger.getAttribute("data-open-project");
+        dialog.removeAttribute("data-closing");
         populateDialog(projectId);
         dialog.showModal();
       });
 
-      closeBtn?.addEventListener("click", () => dialog.close());
+      closeBtns.forEach((btn) => {
+        btn.addEventListener("click", () => closeTopLayer(dialog));
+      });
 
-      dialog.addEventListener("click", (event) => {
-        if (event.target === dialog) {
-          dialog.close();
+      dialog.addEventListener("cancel", (event) => {
+        if (!supportsTopLayerExit()) {
+          event.preventDefault();
+          closeTopLayer(dialog);
         }
       });
+
+      if (!("closedBy" in HTMLDialogElement.prototype)) {
+        const isOutsideDialog = (event) => {
+          const r = dialog.getBoundingClientRect();
+          return (
+            event.clientX < r.left ||
+            event.clientX > r.right ||
+            event.clientY < r.top ||
+            event.clientY > r.bottom
+          );
+        };
+        let pressedOutside = false;
+        dialog.addEventListener("pointerdown", (event) => {
+          pressedOutside = isOutsideDialog(event);
+        });
+        dialog.addEventListener("pointerup", (event) => {
+          if (pressedOutside && isOutsideDialog(event)) {
+            closeTopLayer(dialog);
+          }
+          pressedOutside = false;
+        });
+      }
 
       window.addEventListener("sirius:langchange", () => {
         renderCardsText();
@@ -318,6 +412,9 @@
     }
   }
 
-  document.addEventListener("DOMContentLoaded", initPortfolio);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initPortfolio);
+  } else {
+    initPortfolio();
+  }
 })();
-

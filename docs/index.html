@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIRIUS Digital Solutions — Software, Cloud &amp; AI Engineering</title>
+    <meta name="theme-color" content="#041428" />
+    <title>SIRIUS Digital Solutions — Software Engineering, CMS/ECM, CI/CD &amp; AI</title>
     <meta
       name="description"
-      content="SIRIUS Digital Solutions designs and builds custom web platforms, cloud data architectures, and practical AI automation."
+      content="SIRIUS Digital Solutions builds custom web applications (Symfony, Spring Boot, Angular, React), integrates TYPO3, Ibexa &amp; Nuxeo, automates CI/CD (GitLab, GitHub, Azure), and delivers applied AI &amp; training."
     />
     <link rel="canonical" href="https://www.siriusds.fr/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SIRIUS Digital Solutions" />
+    <meta property="og:title" content="SIRIUS Digital Solutions — Software Engineering, CMS/ECM, CI/CD &amp; AI" />
     <meta
       property="og:description"
-      content="Custom web platforms, cloud architectures, data engineering, and pragmatic AI automation."
+      content="Full-stack web engineering (Symfony, Spring Boot, Angular, React), TYPO3/Ibexa/Nuxeo integrations, CI/CD automation, and applied AI &amp; training."
     />
     <meta property="og:url" content="https://www.siriusds.fr/" />
     <meta property="og:image" content="https://www.siriusds.fr/assets/images/sirius-logo.png" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <link rel="stylesheet" href="assets/css/tokens.css" />
@@ -24,6 +26,19 @@
     <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/pages.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "SIRIUS Digital Solutions",
+        "url": "https://www.siriusds.fr",
+        "email": "contact@siriusds.fr",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "French"],
+        "description": "Full-stack software engineering (PHP Symfony, Java Spring Boot, Angular, React), CMS & ECM integrations (TYPO3, Ibexa, Nuxeo), CI/CD automation (GitLab, GitHub, Azure), and applied AI & team training."
+      }
+    </script>
   </head>
   <body data-page="home">
     <a class="skip-link" href="#main-content" data-i18n="skip.content">Skip to main content</a>
@@ -31,61 +46,64 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html">
-          <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="38" height="38" />
+          <svg class="brand-mark" viewBox="0 0 64 64" width="38" height="38" fill="none" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+            <path d="M25 11H15a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h34a4 4 0 0 0 4-4V15a4 4 0 0 0-4-4H39" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" />
+            <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+            <path d="M11 33c3.5-4.5 10.5-3.2 12 2.2 1.2 4.2-2.5 8-6.4 6.7-2.6-.9-3.2-4-.8-5.4 1.6-.9 3.6.2 3.3 1.9" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+            <path d="M23 41c12.5 1.5 23-6 29-21" stroke="#7dd3fc" stroke-width="3.2" stroke-linecap="round" />
+            <path d="M17 48c14.5 2 26.5-4.5 34.5-18.5" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round" />
+          </svg>
           <span class="brand-text">
             <span class="brand-name">SIRIUS</span>
             <span class="brand-sub">DIGITAL SOLUTIONS</span>
           </span>
         </a>
 
-        <nav class="nav-desktop" aria-label="Primary navigation">
-          <ul class="nav-list">
+        <nav class="site-nav" aria-label="Primary" data-i18n-attr="aria-label:nav.ariaPrimary">
+          <button
+            type="button"
+            id="nav-toggle"
+            class="menu-button"
+            popovertarget="site-menu"
+            popovertargetaction="toggle"
+            aria-controls="site-menu"
+            aria-expanded="false"
+            aria-label="Open navigation menu"
+            data-i18n-attr="aria-label:nav.menuOpen"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+            <span data-i18n="nav.menuLabel">Menu</span>
+          </button>
+
+          <ul id="site-menu" class="site-menu">
             <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
             <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
             <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
             <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a class="nav-link" href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+            <li class="site-menu-cta">
+              <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="nav.cta">Start a Project</a>
+            </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <div class="lang-switch" role="group" aria-label="Language switcher">
+          <div class="lang-switch" role="group" aria-label="Language switcher" data-i18n-attr="aria-label:nav.ariaLang">
             <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="true">EN</button>
             <button type="button" class="lang-btn" data-lang-btn="fr" aria-pressed="false">FR</button>
           </div>
           <a class="btn btn-primary btn-sm header-cta" href="contact.html" data-i18n="nav.cta">
             Start a Project
           </a>
-          <button
-            type="button"
-            id="nav-toggle"
-            class="nav-toggle"
-            aria-controls="nav-mobile"
-            aria-expanded="false"
-            aria-label="Open navigation menu"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
-            </svg>
-          </button>
         </div>
       </div>
-
-      <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
-        <ul class="nav-list">
-          <li><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
-          <li><a class="nav-link" href="services.html" data-i18n="nav.services">Services</a></li>
-          <li><a class="nav-link" href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
-          <li><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-        <div class="nav-mobile-actions">
-          <a class="btn btn-primary" href="contact.html" data-i18n="nav.cta">Start a Project</a>
-        </div>
-      </nav>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <!-- Hero -->
       <section class="hero">
         <div class="container hero-grid">
@@ -95,7 +113,7 @@
               Guiding ambitious teams from architecture to production.
             </h1>
             <p class="hero-lead" data-i18n="home.hero.lead">
-              SIRIUS Digital Solutions partners with founders and enterprises to build resilient web platforms, modern cloud data pipelines, and pragmatic AI workflows.
+              SIRIUS Digital Solutions builds custom web applications (Symfony, Spring Boot, Angular, React), integrates enterprise content platforms (TYPO3, Ibexa, Nuxeo), automates CI/CD pipelines, and empowers teams with applied AI &amp; training.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="contact.html" data-i18n="home.hero.ctaPrimary">
@@ -105,19 +123,50 @@
                 View Portfolio
               </a>
             </div>
+            <div class="hero-trust">
+              <span data-i18n="home.hero.trust1">Senior-led delivery</span>
+              <span data-i18n="home.hero.trust2">Bilingual EN / FR</span>
+              <span data-i18n="home.hero.trust3">EU &amp; GDPR aligned</span>
+            </div>
           </div>
 
-          <aside class="hero-card">
-            <img
-              class="hero-logo"
-              src="assets/images/sirius-logo.png"
-              alt="SIRIUS Digital Solutions brand emblem"
-              width="250"
-              height="250"
-            />
-            <p class="hero-caption" data-i18n="home.hero.cardCaption">
-              Clarity, velocity, and long-term maintainability across every release.
-            </p>
+          <aside class="hero-panel" aria-labelledby="studio-snapshot-title">
+            <div class="hero-panel-head">
+              <div class="hero-panel-brand">
+                <svg viewBox="0 0 64 64" width="40" height="40" fill="none" aria-hidden="true">
+                  <rect width="64" height="64" rx="14" fill="#041428" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="2" />
+                  <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+                  <path d="M16 44c12.5 2 24.5-4.5 34-19" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+                <div>
+                  <div style="font-weight: 700; font-size: var(--text-sm); color: var(--text-primary)">SIRIUS Digital Solutions</div>
+                  <div id="studio-snapshot-title" style="font-size: var(--text-xs); color: var(--text-muted)" data-i18n="home.panel.subtitle">
+                    Engineering Snapshot
+                  </div>
+                </div>
+              </div>
+              <span class="hero-panel-badge" data-i18n="home.panel.badge">Production Ready</span>
+            </div>
+
+            <div class="hero-panel-pillars">
+              <div class="pillar-row">
+                <strong data-i18n="home.panel.p1.title">Full-Stack Development</strong>
+                <span data-i18n="home.panel.p1.tag">Symfony · Spring Boot · Angular · React</span>
+              </div>
+              <div class="pillar-row">
+                <strong data-i18n="home.panel.p2.title">CMS, DXP &amp; Editor Integration</strong>
+                <span data-i18n="home.panel.p2.tag">TYPO3 · Ibexa · Nuxeo</span>
+              </div>
+              <div class="pillar-row">
+                <strong data-i18n="home.panel.p3.title">CI/CD &amp; Applied AI</strong>
+                <span data-i18n="home.panel.p3.tag">GitLab · GitHub · Azure · AI Training</span>
+              </div>
+            </div>
+
+            <div class="hero-panel-foot">
+              <span data-i18n="home.panel.foot1">Automated CI/CD &amp; tests</span>
+              <span data-i18n="home.panel.foot2">&lt; 24h response SLA</span>
+            </div>
           </aside>
         </div>
       </section>
@@ -172,7 +221,9 @@
                 Fast, accessible web applications, customer portals, and APIs built with modern standards.
               </p>
               <div class="card-footer">
-                <a class="btn btn-ghost" href="services.html" data-i18n="home.services.more">Explore all services →</a>
+                <a class="btn btn-ghost" href="services.html#web-platforms" data-i18n="home.services.1.link">
+                  Explore web engineering →
+                </a>
               </div>
             </article>
 
@@ -187,7 +238,9 @@
                 Automated CI/CD, Infrastructure as Code, observability, and zero-downtime deployments.
               </p>
               <div class="card-footer">
-                <a class="btn btn-ghost" href="services.html" data-i18n="home.services.more">Explore all services →</a>
+                <a class="btn btn-ghost" href="services.html#cms-integrations" data-i18n="home.services.2.link">
+                  Explore integrations &amp; CI/CD →
+                </a>
               </div>
             </article>
 
@@ -198,12 +251,14 @@
                   <circle cx="12" cy="12" r="3" />
                 </svg>
               </div>
-              <h3 class="card-title" data-i18n="home.services.3.title">Data &amp; AI Automation</h3>
+              <h3 class="card-title" data-i18n="home.services.3.title">Applied AI, Second Brain &amp; Training</h3>
               <p data-i18n="home.services.3.desc">
-                Reliable ELT pipelines, analytics dashboards, and practical LLM workflows grounded in your data.
+                Custom AI agent skills, structured Second Brain knowledge systems, and practical training for engineering teams.
               </p>
               <div class="card-footer">
-                <a class="btn btn-ghost" href="services.html" data-i18n="home.services.more">Explore all services →</a>
+                <a class="btn btn-ghost" href="services.html#ai-training" data-i18n="home.services.3.link">
+                  Explore AI &amp; training →
+                </a>
               </div>
             </article>
           </div>
@@ -216,7 +271,7 @@
           <div class="section-header">
             <span class="eyebrow" data-i18n="home.work.eyebrow">Selected Work</span>
             <h2 class="section-title" data-i18n="home.work.title">
-              Templates of impact across industries
+              Proven architectures across core industries
             </h2>
             <p class="section-lead" data-i18n="home.work.lead">
               Preview representative engagements across SaaS platforms, cloud modernization, and automated operations.
@@ -224,54 +279,94 @@
           </div>
 
           <div id="portfolio-grid" class="grid grid-3">
-            <article class="card project-card" data-project-id="saas-portal" data-category="web">
+            <article class="card project-card" data-project-id="ibexa-portal" data-category="web">
               <div class="project-thumb">
-                <span class="project-thumb-label">Web &amp; Apps</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="8" y="8" width="264" height="64" rx="8" stroke="currentColor" stroke-opacity="0.45" />
+                  <path d="M8 24h264" stroke="currentColor" stroke-opacity="0.3" />
+                  <circle cx="20" cy="16" r="2.5" fill="currentColor" />
+                  <circle cx="30" cy="16" r="2.5" fill="currentColor" opacity="0.6" />
+                  <rect x="20" y="34" width="76" height="28" rx="4" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-opacity="0.5" />
+                  <rect x="106" y="34" width="76" height="28" rx="4" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-opacity="0.35" />
+                  <rect x="192" y="34" width="68" height="28" rx="4" fill="currentColor" fill-opacity="0.22" stroke="currentColor" stroke-opacity="0.6" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="home.work.cat.web">Web &amp; CMS/ECM</span>
+                  <span class="project-metric" data-project-metric>2.4x editorial velocity</span>
+                </div>
               </div>
-              <span class="card-meta" data-project-sector>B2B SaaS · FinTech</span>
-              <h3 class="card-title" data-project-title>Multi-Tenant Client &amp; Billing Portal</h3>
+              <span class="card-meta" data-project-sector>Enterprise Portal · PHP / Ibexa DXP</span>
+              <h3 class="card-title" data-project-title>Multi-Site Customer &amp; Editorial Portal</h3>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">TypeScript</span>
-                <span class="tag">Next.js</span>
-                <span class="tag">PostgreSQL</span>
+                <span class="tag">PHP / Symfony</span>
+                <span class="tag">Ibexa DXP</span>
+                <span class="tag">React</span>
               </div>
               <div class="card-footer">
-                <a class="btn btn-ghost" href="portfolio.html?project=saas-portal" data-i18n="portfolio.btn.inspect">View Case Study</a>
+                <a class="btn btn-ghost" href="portfolio.html?project=ibexa-portal" data-i18n="home.work.inspect.ibexa">
+                  View Ibexa &amp; Symfony case study
+                </a>
               </div>
             </article>
 
-            <article class="card project-card" data-project-id="cloud-lakehouse" data-category="cloud">
+            <article class="card project-card" data-project-id="cicd-platform" data-category="cicd">
               <div class="project-thumb">
-                <span class="project-thumb-label">Cloud &amp; Data</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <circle cx="48" cy="40" r="20" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.6" />
+                  <circle cx="140" cy="40" r="22" fill="currentColor" fill-opacity="0.22" stroke="currentColor" />
+                  <circle cx="232" cy="40" r="20" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.6" />
+                  <path d="M68 40h50M162 40h50" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  <path d="M132 40l6 6 12-12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="home.work.cat.cicd">CI/CD &amp; DevOps</span>
+                  <span class="project-metric" data-project-metric>4x faster releases</span>
+                </div>
               </div>
-              <span class="card-meta" data-project-sector>Retail &amp; Logistics · Cloud &amp; Data</span>
-              <h3 class="card-title" data-project-title>Unified Cloud Data Warehouse &amp; CI/CD</h3>
+              <span class="card-meta" data-project-sector>DevOps &amp; Quality · CI/CD Automation</span>
+              <h3 class="card-title" data-project-title>Multi-Repo CI/CD &amp; Automated Quality Gates</h3>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">BigQuery</span>
-                <span class="tag">dbt</span>
-                <span class="tag">Terraform</span>
+                <span class="tag">GitLab CI</span>
+                <span class="tag">GitHub Actions</span>
+                <span class="tag">Azure DevOps</span>
               </div>
               <div class="card-footer">
-                <a class="btn btn-ghost" href="portfolio.html?project=cloud-lakehouse" data-i18n="portfolio.btn.inspect">View Case Study</a>
+                <a class="btn btn-ghost" href="portfolio.html?project=cicd-platform" data-i18n="home.work.inspect.cicd">
+                  View CI/CD automation case study
+                </a>
               </div>
             </article>
 
-            <article class="card project-card" data-project-id="ai-ops-copilot" data-category="ai">
+            <article class="card project-card" data-project-id="ai-second-brain" data-category="ai">
               <div class="project-thumb">
-                <span class="project-thumb-label">AI &amp; Automation</span>
+                <svg class="project-schematic" viewBox="0 0 280 80" fill="none" aria-hidden="true">
+                  <rect x="16" y="16" width="52" height="48" rx="6" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.5" />
+                  <path d="M26 30h32M26 40h24M26 50h28" stroke="currentColor" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
+                  <path d="M68 40h36" stroke="currentColor" stroke-width="1.8" stroke-dasharray="4 3" />
+                  <circle cx="136" cy="40" r="22" fill="currentColor" fill-opacity="0.2" stroke="currentColor" />
+                  <path d="M136 27l2.5 9.5L148 39l-9.5 2.5L136 51l-2.5-9.5L124 39l9.5-2.5L136 27z" fill="currentColor" />
+                  <path d="M158 40h36" stroke="currentColor" stroke-width="1.8" />
+                  <rect x="194" y="20" width="70" height="40" rx="6" fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-opacity="0.6" />
+                </svg>
+                <div class="project-thumb-foot">
+                  <span class="project-thumb-label" data-i18n="home.work.cat.ai">AI &amp; Training</span>
+                  <span class="project-metric" data-project-metric>-50% onboarding ramp</span>
+                </div>
               </div>
-              <span class="card-meta" data-project-sector>Operations · AI &amp; Automation</span>
-              <h3 class="card-title" data-project-title>Internal Knowledge &amp; Document Triage Assistant</h3>
+              <span class="card-meta" data-project-sector>Knowledge &amp; Productivity · Applied AI</span>
+              <h3 class="card-title" data-project-title>Engineering Second Brain &amp; Custom AI Skills</h3>
               <p data-project-summary></p>
               <div class="tag-list">
-                <span class="tag">Python</span>
-                <span class="tag">RAG</span>
-                <span class="tag">Cloud Run</span>
+                <span class="tag">Second Brain</span>
+                <span class="tag">AI Skills</span>
+                <span class="tag">MCP</span>
               </div>
               <div class="card-footer">
-                <a class="btn btn-ghost" href="portfolio.html?project=ai-ops-copilot" data-i18n="portfolio.btn.inspect">View Case Study</a>
+                <a class="btn btn-ghost" href="portfolio.html?project=ai-second-brain" data-i18n="home.work.inspect.ai">
+                  View AI Second Brain case study
+                </a>
               </div>
             </article>
           </div>
@@ -354,7 +449,11 @@
         <div class="footer-grid">
           <div class="footer-col">
             <a class="brand" href="index.html" style="margin-bottom: 1rem">
-              <img class="brand-mark" src="assets/images/favicon.png" alt="SIRIUS Digital Solutions" width="34" height="34" />
+              <svg class="brand-mark" viewBox="0 0 64 64" width="34" height="34" fill="none" aria-hidden="true">
+                <rect width="64" height="64" rx="14" fill="#071931" stroke="#38bdf8" stroke-opacity="0.38" stroke-width="2" />
+                <path d="M32 10l3.2 11.8L47 25l-11.8 3.2L32 40l-3.2-11.8L17 25l11.8-3.2L32 10z" fill="#f8fafc" />
+                <path d="M16 44c12.5 2 24.5-4.5 34-19" stroke="#38bdf8" stroke-width="3.2" stroke-linecap="round" />
+              </svg>
               <span class="brand-text">
                 <span class="brand-name">SIRIUS</span>
                 <span class="brand-sub">DIGITAL SOLUTIONS</span>
@@ -366,27 +465,28 @@
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.company">Company</h3>
+            <h2 class="footer-heading" data-i18n="footer.company">Company</h2>
             <ul class="footer-links">
               <li><a href="index.html" data-i18n="nav.home">Home</a></li>
               <li><a href="services.html" data-i18n="nav.services">Services</a></li>
               <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
               <li><a href="about.html" data-i18n="nav.about">About</a></li>
+              <li><a href="careers.html" data-i18n="nav.careers">Join Us</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.solutions">Solutions</h3>
+            <h2 class="footer-heading" data-i18n="footer.solutions">Solutions</h2>
             <ul class="footer-links">
-              <li><a href="services.html" data-i18n="footer.sol.web">Web &amp; Mobile Apps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.cloud">Cloud &amp; DevOps</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.data">Data Engineering</a></li>
-              <li><a href="services.html" data-i18n="footer.sol.ai">AI &amp; Automation</a></li>
+              <li><a href="services.html#web-platforms" data-i18n="footer.sol.web">Web &amp; Backend Apps</a></li>
+              <li><a href="services.html#cms-integrations" data-i18n="footer.sol.cms">TYPO3, Ibexa &amp; Nuxeo</a></li>
+              <li><a href="services.html#cicd-devops" data-i18n="footer.sol.cicd">CI/CD (GitLab, GitHub, Azure)</a></li>
+              <li><a href="services.html#ai-training" data-i18n="footer.sol.ai">AI, Second Brain &amp; Training</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
-            <h3 data-i18n="footer.connect">Connect</h3>
+            <h2 class="footer-heading" data-i18n="footer.connect">Connect</h2>
             <ul class="footer-links">
               <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
               <li><a href="mailto:contact@siriusds.fr">contact@siriusds.fr</a></li>

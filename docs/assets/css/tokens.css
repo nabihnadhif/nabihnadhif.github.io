@@ -5,20 +5,22 @@
   --bg-canvas: #041428;
   --bg-surface: #081c36;
   --bg-elevated: #0d2442;
-  --bg-elevated-hover: #122d52;
-  --bg-glass: rgba(4, 20, 40, 0.82);
+  --bg-elevated-hover: #133057;
+  --bg-glass: rgba(4, 20, 40, 0.86);
 
   --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-secondary: #a8b9cf;
+  --text-muted: #8da2bc;
 
   --accent: #38bdf8;
   --accent-strong: #0ea5e9;
+  --accent-tint: #bae6fd;
   --accent-soft: rgba(56, 189, 248, 0.12);
   --accent-glow: rgba(56, 189, 248, 0.28);
 
-  --border: rgba(56, 189, 248, 0.16);
-  --border-strong: rgba(56, 189, 248, 0.38);
+  --border: rgba(56, 189, 248, 0.18);
+  --border-strong: rgba(56, 189, 248, 0.42);
+  --border-control: rgba(125, 211, 252, 0.38);
 
   --success: #34d399;
   --success-soft: rgba(52, 211, 153, 0.14);
@@ -28,8 +30,8 @@
   --danger-soft: rgba(251, 113, 133, 0.14);
 
   /* Typography */
-  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
   --text-xs: 0.75rem;
@@ -37,14 +39,15 @@
   --text-base: 1rem;
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
-  --text-2xl: clamp(1.5rem, 2.4vw, 1.875rem);
-  --text-3xl: clamp(1.875rem, 3.2vw, 2.5rem);
-  --text-hero: clamp(2.35rem, 5vw, 3.75rem);
+  /* Combine rem and vw in clamp() with max <= 2.5x min so browser zoom scales properly */
+  --text-2xl: clamp(1.375rem, 1.05rem + 1.2vw, 1.875rem);
+  --text-3xl: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  --text-hero: clamp(2.15rem, 1.25rem + 3.2vw, 3.55rem);
 
   /* Spacing & Layout */
   --container-max: 1180px;
   --gutter: clamp(1rem, 3vw, 2rem);
-  --section-py: clamp(3.5rem, 7vw, 6rem);
+  --section-py: clamp(3.5rem, 6.5vw, 5.75rem);
   --header-height: 76px;
 
   /* Radii */
@@ -54,12 +57,12 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-card: 0 12px 32px -12px rgba(2, 8, 23, 0.65);
-  --shadow-glow: 0 0 40px -10px rgba(56, 189, 248, 0.25);
+  --shadow-card: 0 14px 36px -14px rgba(2, 8, 23, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --shadow-elevated: 0 24px 64px rgba(2, 8, 23, 0.78);
+  --shadow-glow: 0 0 42px -10px rgba(56, 189, 248, 0.28);
 
   /* Motion */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --duration-fast: 180ms;
-  --duration-base: 280ms;
+  --duration-fast: 160ms;
+  --duration-base: 260ms;
 }
-
