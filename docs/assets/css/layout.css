@@ -11,6 +11,43 @@
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--border);
+    transition:
+      background-color var(--duration-base) var(--ease-out),
+      border-color var(--duration-base) var(--ease-out),
+      box-shadow var(--duration-base) var(--ease-out);
+  }
+
+  .site-header.is-scrolled {
+    background: rgba(3, 15, 31, 0.94);
+    border-bottom-color: var(--border-strong);
+    box-shadow: 0 10px 30px -12px rgba(2, 8, 23, 0.85);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+      @keyframes sirius-scroll-progress {
+        from {
+          transform: scaleX(0);
+        }
+        to {
+          transform: scaleX(1);
+        }
+      }
+
+      .site-header::after {
+        content: "";
+        position: absolute;
+        inset-block-end: -1px;
+        inset-inline-start: 0;
+        inline-size: 100%;
+        block-size: 2px;
+        background: linear-gradient(90deg, var(--accent-strong), var(--accent-tint));
+        transform-origin: 0 50%;
+        pointer-events: none;
+        animation: sirius-scroll-progress auto linear;
+        animation-timeline: scroll(root block);
+      }
+    }
   }
 
   .site-header.is-measuring * {

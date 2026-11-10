@@ -42,8 +42,37 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--header-height) + 1rem);
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+      navigation: auto;
+    }
+
+    ::view-transition-old(root) {
+      animation: sirius-vt-out 180ms var(--ease-out) both;
+    }
+
+    ::view-transition-new(root) {
+      animation: sirius-vt-in 240ms var(--ease-out) both;
+    }
+  }
+
+  @keyframes sirius-vt-out {
+    to {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+  }
+
+  @keyframes sirius-vt-in {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -334,6 +363,29 @@
     .btn-secondary,
     .btn-ghost {
       border: 1px solid ButtonText;
+    }
+  }
+
+  /* Scroll-triggered Staggered Reveals (progressive enhancement via .has-motion-ready) */
+  @media (prefers-reduced-motion: no-preference) {
+    html.has-motion-ready [data-animate] {
+      opacity: 0;
+      transform: translateY(18px);
+      transition:
+        opacity 500ms var(--ease-out),
+        transform 500ms var(--ease-out);
+      transition-delay: calc((var(--sibling-index, 1) - 1) * 65ms);
+      transition-delay: calc((sibling-index() - 1) * 65ms);
+    }
+
+    html.has-motion-ready [data-animate].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    html.has-motion-ready [data-animate].is-settled {
+      transition-delay: 0ms;
+      transition-duration: var(--duration-base);
     }
   }
 }

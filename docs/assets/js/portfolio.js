@@ -276,7 +276,7 @@
 
     let activeFilter = "all";
 
-    function applyFilter(category) {
+    function applyFilter(category, animate = false) {
       activeFilter = category;
       let visibleCount = 0;
 
@@ -284,7 +284,15 @@
         const cardCat = card.getAttribute("data-category");
         const match = category === "all" || cardCat === category;
         card.hidden = !match;
-        if (match) visibleCount += 1;
+        if (match) {
+          visibleCount += 1;
+          if (animate) {
+            card.classList.remove("is-filtering");
+            void card.offsetWidth;
+            card.classList.add("is-filtering");
+            card.classList.add("is-visible", "is-settled");
+          }
+        }
       });
 
       filterButtons.forEach((btn) => {
@@ -301,7 +309,7 @@
 
     filterButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
-        applyFilter(btn.getAttribute("data-filter") || "all");
+        applyFilter(btn.getAttribute("data-filter") || "all", true);
       });
     });
 
